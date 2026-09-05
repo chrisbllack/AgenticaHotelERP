@@ -1,0 +1,15 @@
+2026/09/05 12:14:57 Starting INFINEON in demo mode (SQLite)...
+2026/09/05 12:14:57 Running SQLite migrations...
+2026/09/05 12:14:57 [sqlite] All 101 migrations applied successfully
+2026/09/05 12:14:57 Seeding demo data...
+2026/09/05 12:14:57 [sqlite] Seeding demo data for 50-room Grand Palm Hotel Lagos...
+2026/09/05 12:14:58 [sqlite] Demo seed data complete: 1 prope[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (vite.config.ts:11:25). Use `import.meta.dirname` instead
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+es, 15 contracts, 2 performance cycles
+2026/09/05 12:14:58 =====================================================
+2026/09/05 12:14:58   INFINEON Enterprise Platform v1.0.0
+2026/09/05 12:14:58   Demo mode | http://localhost:8080
+2026/09/05 12:14:58   Database: SQLite (infineon_demo.db)
+2026/09/05 12:14:58   Admin: admin@infineon.com / admin123
+2026/09/05 12:14:58 =====================================================

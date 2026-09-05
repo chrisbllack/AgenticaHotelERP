@@ -1,0 +1,22 @@
+-- Seed units of measure
+INSERT INTO units_of_measure (name, abbreviation) VALUES
+('Kilogram', 'kg'),
+('Gram', 'g'),
+('Liter', 'L'),
+('Milliliter', 'ml'),
+('Piece', 'pc'),
+('Box', 'box'),
+('Dozen', 'dz'),
+('Pack', 'pack'),
+('Bottle', 'btl'),
+('Carton', 'ctn'),
+('Sack', 'sack'),
+('Gallon', 'gal'),
+('Pound', 'lb'),
+('Ounce', 'oz'),
+('Meter', 'm'),
+('Roll', 'roll'),
+('Bundle', 'bdl'),
+('Tray', 'tray'),
+('Can', 'can'),
+('Bag', 'bag');

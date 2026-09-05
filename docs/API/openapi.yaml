@@ -1,0 +1,346 @@
+openapi: 3.0.3
+info:
+  title: INFINEON Enterprise Platform API
+  description: |
+    Complete REST API for the INFINEON Hotel PMS + POS + ERP platform.
+    Supports on-premise and cloud deployment with offline-first architecture.
+  version: 1.0.0
+  contact:
+    name: InfinityPlus Solutions & Services Ltd
+
+servers:
+  - url: http://localhost:8080/api/v1
+    description: Local development
+  - url: https://{property}.infineon.com/api/v1
+    description: Cloud deployment
+
+security:
+  - BearerAuth: []
+
+paths:
+  /health:
+    get:
+      summary: Health check
+      tags: [System]
+      security: []
+      responses:
+        '200':
+          description: System healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status: { type: string, example: healthy }
+                  version: { type: string }
+
+  /auth/login:
+    post:
+      summary: Authenticate user
+      tags: [Auth]
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password]
+              properties:
+                email: { type: string, format: email }
+                password: { type: string }
+      responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success: { type: boolean }
+                  data:
+                    type: object
+                    properties:
+                      token: { type: string }
+                      user: { $ref: '#/components/schemas/User' }
+
+  /rooms:
+    get:
+      summary: List all rooms
+      tags: [Rooms]
+      parameters:
+        - name: status
+          in: query
+          schema: { type: string }
+        - name: room_type_id
+          in: query
+          schema: { type: string }
+      responses:
+        '200':
+          description: Room list
+    post:
+      summary: Create a room
+      tags: [Rooms]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RoomCreate'
+
+  /room-types:
+    get:
+      summary: List room types
+      tags: [Room Types]
+    post:
+      summary: Create room type
+      tags: [Room Types]
+
+  /guests:
+    get:
+      summary: List guests
+      tags: [Guests]
+    post:
+      summary: Create guest
+      tags: [Guests]
+
+  /reservations:
+    get:
+      summary: List reservations
+      tags: [Reservations]
+      parameters:
+        - name: status
+          in: query
+          schema: { type: string }
+        - name: check_in
+          in: query
+          schema: { type: string, format: date }
+    post:
+      summary: Create reservation
+      tags: [Reservations]
+
+  /reservations/{id}/check-in:
+    post:
+      summary: Check in guest
+      tags: [Front Desk]
+
+  /reservations/{id}/check-out:
+    post:
+      summary: Check out guest
+      tags: [Front Desk]
+
+  /front-desk/dashboard:
+    get:
+      summary: Front desk dashboard with KPIs
+      tags: [Front Desk]
+
+  /pos/outlets:
+    get:
+      summary: List POS outlets
+      tags: [POS]
+
+  /pos/orders:
+    post:
+      summary: Create POS order
+      tags: [POS]
+
+  /night-audit/run:
+    post:
+      summary: Run night audit
+      tags: [Night Audit]
+
+  /inventory/products:
+    get:
+      summary: List inventory products
+      tags: [Inventory]
+    post:
+      summary: Create product
+      tags: [Inventory]
+
+  /finance/accounts:
+    get:
+      summary: Chart of Accounts
+      tags: [Finance]
+
+  /finance/journal:
+    get:
+      summary: Journal entries
+      tags: [Finance]
+    post:
+      summary: Create journal entry
+      tags: [Finance]
+
+  /finance/profit-loss:
+    get:
+      summary: Profit & Loss report
+      tags: [Finance]
+
+  /hr/employees:
+    get:
+      summary: List employees
+      tags: [HR]
+    post:
+      summary: Create employee
+      tags: [HR]
+
+  /hr/payroll:
+    get:
+      summary: Payroll runs
+      tags: [HR]
+    post:
+      summary: Create payroll run
+      tags: [HR]
+
+  /crm/guests:
+    get:
+      summary: CRM guest search
+      tags: [CRM]
+
+  /crm/guests/{id}/profile:
+    get:
+      summary: Full guest CRM profile
+      tags: [CRM]
+
+  /crm/loyalty/tiers:
+    get:
+      summary: Loyalty tier configuration
+      tags: [CRM]
+
+  /crm/feedback:
+    get:
+      summary: Guest feedback list
+      tags: [CRM]
+    post:
+      summary: Submit feedback
+      tags: [CRM]
+
+  /channels:
+    get:
+      summary: OTA channel integrations
+      tags: [Channels]
+
+  /payments/initiate:
+    post:
+      summary: Initiate a payment
+      tags: [Payments]
+
+  /payments/webhook/paystack:
+    post:
+      summary: Paystack webhook callback
+      tags: [Payments]
+      security: []
+
+  /hardware/devices:
+    get:
+      summary: Registered hardware devices
+      tags: [Hardware]
+
+  /hardware/health:
+    get:
+      summary: Device health check
+      tags: [Hardware]
+
+  /hardware/door-lock/encode:
+    post:
+      summary: Encode door lock key card
+      tags: [Hardware]
+
+  /events:
+    get:
+      summary: List events
+      tags: [Events]
+    post:
+      summary: Create event
+      tags: [Events]
+
+  /events/venues:
+    get:
+      summary: List venues
+      tags: [Events]
+
+  /notifications/send:
+    post:
+      summary: Send notification
+      tags: [Notifications]
+
+  /workflow/approvals:
+    get:
+      summary: Pending approvals
+      tags: [Workflow]
+    post:
+      summary: Approve or reject
+      tags: [Workflow]
+
+  /backups/create:
+    post:
+      summary: Create database backup
+      tags: [Admin]
+
+  /backups:
+    get:
+      summary: List backups
+      tags: [Admin]
+
+  /reports/dashboard:
+    get:
+      summary: Executive dashboard KPIs
+      tags: [Reports]
+
+  /reports/occupancy:
+    get:
+      summary: Occupancy report
+      tags: [Reports]
+
+  /reports/room-revenue:
+    get:
+      summary: Room revenue report
+      tags: [Reports]
+
+  /audit-logs:
+    get:
+      summary: Audit trail
+      tags: [Admin]
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    User:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        email: { type: string }
+        role: { type: string }
+
+    RoomCreate:
+      type: object
+      required: [number, room_type_id]
+      properties:
+        number: { type: string }
+        room_type_id: { type: string }
+        floor: { type: string }
+        building_id: { type: string }
+
+    APIResponse:
+      type: object
+      properties:
+        success: { type: boolean }
+        data: {}
+        meta:
+          type: object
+          properties:
+            request_id: { type: string }
+            pagination: { $ref: '#/components/schemas/Pagination' }
+        timestamp: { type: string, format: date-time }
+
+    Pagination:
+      type: object
+      properties:
+        current_page: { type: integer }
+        per_page: { type: integer }
+        total: { type: integer }
+        last_page: { type: integer }
