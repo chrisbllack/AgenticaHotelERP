@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
@@ -10,10 +11,24 @@ export default defineConfig({
     ['html', { outputFolder: 'playwright-report' }],
     ['list'],
   ],
+=======
+import { defineConfig, devices } from '@playwright/test';
+
+export default defineConfig({
+  testDir: './e2e-playwright',
+  fullyParallel: false,
+  forbidOnly: true,
+  retries: 0,
+  workers: 1,
+  reporter: 'list',
+  timeout: 60_000,
+
+>>>>>>> origin/main
   use: {
     baseURL: 'http://localhost:5173',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
+<<<<<<< HEAD
     video: 'retain-on-failure',
   },
   projects: [
@@ -39,4 +54,20 @@ export default defineConfig({
     reuseExistingServer: !process.env.CI,
     timeout: 30000,
   },
+=======
+    actionTimeout: 10_000,
+    navigationTimeout: 15_000,
+  },
+
+  projects: [
+    {
+      name: 'chrome',
+      use: {
+        ...devices['Desktop Chrome'],
+        channel: 'chrome',
+        executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+      },
+    },
+  ],
+>>>>>>> origin/main
 });

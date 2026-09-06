@@ -10,6 +10,7 @@
     "build": "vite build",
     "check": "tsc -b --noEmit",
     "test": "bun test",
+    "e2e": "playwright test",
     "lint": "oxlint src",
     "typecheck": "tsc -b --noEmit"
   },
@@ -23,6 +24,7 @@
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@tailwindcss/vite": "^4.3.3",
     "@types/bun": "^1.4.1",
     "@types/node": "^24.13.3",
