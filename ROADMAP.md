@@ -1,5 +1,12 @@
 # Roadmap — INFINEON Enterprise Platform
 
+Modules are now grouped into **13 main modules** (ADR-0006). Packages below map
+to main modules: **M-PLT** (P003–P007), **M-LOD** (P008–P011), **M-FNB** (P012),
+**M-INV** (P013), **M-FIN** (P014), **M-HR** (P015), **M-CRM** (P016),
+**M-DST+M-PRC** (P017), **M-BUS** (P018, P020), **M-HDW** (P019),
+**M-MOB** (P021), **Platform-wide** (P022–P024). Feature depth per module:
+[docs/modules/](docs/modules/MODULES.md).
+
 ## Implementation Packages
 
 | Package | Name | Status | Sprint |
@@ -22,7 +29,7 @@
 | P016 | CRM — Guest History, Loyalty, Feedback | ⬜ Not Started | S21 |
 | P017 | Channel Manager, Booking Engine, Payments | ⬜ Not Started | S22 |
 | P018 | IBIP — Reporting, Dashboards, KPIs, Analytics | ⬜ Not Started | S24 |
-| P019 | Hardware Framework & Door Locks | ⬜ Not Started | S26 |
+| P019 | Hardware Framework & Door Locks (M-HDW) | ⬜ Not Started | S26 |
 | P020 | AI Platform — Assistant, Forecasting, NL Analytics | ⬜ Not Started | S27 |
 | P021 | Mobile Applications & Offline Workflows | ⬜ Not Started | S28-S29 |
 | P022 | Enterprise Hardening, Performance, DR, Observability | ⬜ Not Started | S30 |

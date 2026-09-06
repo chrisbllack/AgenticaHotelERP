@@ -24,9 +24,16 @@ cmd/infineon/infineon
 vendor/
 
 # Node / React
-frontend/node_modules/
-frontend/dist/
-frontend/.vite/
+node_modules/
+dist/
+.vite/
+
+# Convex generated code
+src/convex/_generated/
+convex/_generated/
+
+# Local env
+.env.local
 
 # Flutter
 mobile/.dart_tool/
@@ -47,10 +54,16 @@ dump.rdb
 
 # Database
 *.sqlite
+*.db
+*.db-shm
+*.db-wal
+*.log
 
 # Test / coverage
 coverage/
 htmlcov/
+test-results/
+playwright-report/
 
 # Temporary
 tmp/

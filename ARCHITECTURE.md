@@ -26,15 +26,42 @@ Request → CorrelationID → TenantResolution → Auth → Permission
 → APIResponse
 ```
 
-## Domain Map
+## Module Map (ADR-0006)
+
+Business capability is grouped into **13 main modules** (product/licensing
+boundaries) carrying 62 submodules (code boundaries in
+`internal/domain/{submodule}/`). Platform capabilities sit beside them.
 
 ```
-Identity → Organization → Configuration → Audit
-    ↓
-Hospitality | Restaurant | Inventory | Finance | HR | CRM | Maintenance
-    ↓
-Analytics | AI | Hardware | Payments | Licensing | Notifications | Workflow
+                    ┌────────────────────────────────────────────┐
+                    │         M-PLT  Platform Core               │
+                    │ Identity · Org · Config · Workflow · Audit │
+                    └────────────────────────────────────────────┘
+                                       ▲ consumed by all
+┌────────┐  events  ┌────────┐   API  ┌────────┐
+│ M-DST  │────────▶│ M-LOD  │◀───────│ M-EVT  │
+└───┬────┘         └───┬────┘        └───┬────┘
+    │                  │ charges         │ catering/banquet
+    ▼                  ▼                 ▼
+┌────────┐         ┌────────┐         ┌────────┐
+│ M-CRM  │         │ M-FNB  │         │ M-INV  │
+└────────┘         └───┬────┘         └───┬────┘
+                       │ posts            │ goods receipt/AP
+                       ▼                  ▼
+                    ┌────────────────────────────┐
+                    │  M-FIN ◀── M-PRC  M-HR     │
+                    └────────────────────────────┘
+                                       │ facts to
+                                       ▼
+                    ┌────────────────────────────┐
+                    │  M-BUS · M-HDW · M-MOB     │
+                    └────────────────────────────┘
 ```
+
+**Dependency rule (ADR-0006):** modules depend on Platform Core, on platform
+capabilities, and on other main modules only through published service
+contracts and versioned domain events — never through their tables. All money
+posts through M-FIN. Full catalog: [docs/modules/MODULES.md](docs/modules/MODULES.md).
 
 ## Key Design Decisions
 
@@ -45,6 +72,7 @@ See [docs/ADR/](docs/ADR/) for Architecture Decision Records.
 - [ADR-0003](docs/ADR/0003-DomainArchitecture.md) — Domain Architecture
 - [ADR-0004](docs/ADR/0004-HardwareAbstraction.md) — Hardware Abstraction
 - [ADR-0005](docs/ADR/0005-AnalyticsArchitecture.md) — Analytics Architecture
+- [ADR-0006](docs/ADR/0006-ModuleHierarchy.md) — Platform Module Hierarchy & Main-Module Grouping
 
 ## Tech Stack
 
@@ -82,7 +110,9 @@ See [docs/ADR/](docs/ADR/) for Architecture Decision Records.
 ├── mobile/                # Flutter
 ├── migrations/            # SQL migrations (embedded)
 ├── seeds/                 # Seed data (embedded)
-├── docs/                  # Documentation
+├── docs/
+│   ├── modules/           # Main-module specs (M-LOD…M-SEC) + MODULES.md catalog
+│   └── ADR/               # Architecture Decision Records
 ├── .github/workflows/     # CI/CD
 └── infrastructure/        # Docker, deployment configs
 ```

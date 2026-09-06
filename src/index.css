@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand: deep rainforest emerald — African luxury hospitality */
+  --color-brand-50: #ecf6f1;
+  --color-brand-100: #d3eae0;
+  --color-brand-200: #a8d4c2;
+  --color-brand-300: #74b69c;
+  --color-brand-400: #47937a;
+  --color-brand-500: #2c765f;
+  --color-brand-600: #1f5d4b;
+  --color-brand-700: #194a3d;
+  --color-brand-800: #143a30;
+  --color-brand-900: #102e27;
+  --color-brand-950: #081a15;
+
+  /* Accent: brass gold */
+  --color-gold-300: #e8cd7a;
+  --color-gold-400: #d9b54c;
+  --color-gold-500: #c9a227;
+  --color-gold-600: #a5831d;
+
+  --color-ink: #071310;
+
+  --font-display: Georgia, "Times New Roman", serif;
+
+  --shadow-panel: 0 1px 0 0 rgb(255 255 255 / 0.04), 0 8px 24px -12px rgb(0 0 0 / 0.6);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-brand-950);
+  color: #e7efe9;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-gold-500);
+  color: var(--color-brand-950);
+}
+
+/* Slim scrollbars for dense enterprise tables */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-brand-700) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--color-brand-700);
+  border-radius: 8px;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-up {
+  animation: fade-up 0.35s ease-out both;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+.animate-pulse-dot {
+  animation: pulse-dot 1.6s ease-in-out infinite;
+}
