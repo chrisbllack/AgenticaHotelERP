@@ -1,0 +1,19 @@
+2026/09/06 14:39:06 Starting INFINEON in demo mode (SQLite)...
+2026/09/06 14:39:07 Running SQLite migrations...
+2026/09/06 14:39:07 [sqlite] All 161 migrations applied successfully
+2026/09/06 14:39:07 Initializing Channel Manager schema...
+2026/09/06 14:39:07 Seeding demo data (including OTA bookings)...
+2026/09/06 14:39:07 [sqlite] Seeding demo data for 50-room Grand Palm Hotel Lagos...
+2026/09/06 14:39:07 [sqlite] Demo seed data complete: 1 property, 50 rooms, 20 guests, 25 reservations (10 in-house), 10 stays, 6 folios, 6 POS orders, 13 housekeeping tasks, 5 loyalty tiers, 4 venues, 3 events, 6 pricing rules, 6 tax rates, 11 payment methods, 14 departments, 8 numbering sequences, 33 system settings, 5 shifts, 8 leave types, 10 holidays, 8 training courses, 15 contracts, 2 performance cycles, 10 profiles, 105 attendance records, 8 leave requests, 15 training enrollments, 8 traces, 6 service requests, 5 interactions, 3 assignment rules, 4 room assignments, 18 OTA bookings, 16 restaurant tables, 24 menu items, 15 ingredients, 8 restaurant orders, 5 restaurant guests, 1 delivery
+2026/09/06 14:39:07 Seeding channel connections & mappings...
+2026/09/06 14:39:07 [CHANNEL] Seeded 8 channels, 8 mappings
+2026/09/06 14:39:07 [payment] Manager initialized with active provider: mock, idempotency: enabled
+2026/09/06 14:39:07 [server] Payment integration initialized: provider=mock
+2026/09/06 14:39:07 =====================================================
+2026/09/06 14:39:07   INFINEON Enterprise Platform v1.0.0
+2026/09/06 14:39:07   Demo mode | http://localhost:8080
+2026/09/06 14:39:07   Database: SQLite (infineon_demo.db)
+2026/09/06 14:39:07   Channel Manager: Initialized (8 OTA channels, 18 bookings)
+2026/09/06 14:39:07   Payment: Mock provider (demo mode)
+2026/09/06 14:39:07   Admin: admin@infineon.com / admin123
+2026/09/06 14:39:07 =====================================================

@@ -1,0 +1,13 @@
+2026/09/06 14:39:11 [DESKTOP-E8PN8I3/q5GnKPibfU-000001] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:50964 - 200 429B in 1.0782ms
+2026/09/06 14:39:22 [DESKTOP-E8PN8I3/q5GnKPibfU-000002] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:50976 - 200 429B in 506.1µs
+2026/09/06 14:39:37 [DESKTOP-E8PN8I3/q5GnKPibfU-000003] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:50986 - 200 429B in 556.8µs
+2026/09/06 14:39:41 [DESKTOP-E8PN8I3/q5GnKPibfU-000004] "GET http://127.0.0.1:8080/api/v1/health HTTP/1.1" from 127.0.0.1:50987 - 200 213B in 0s
+2026/09/06 14:39:49 [DESKTOP-E8PN8I3/q5GnKPibfU-000005] "POST http://127.0.0.1:8080/api/v1/auth/login HTTP/1.1" from 127.0.0.1:50990 - 200 819B in 150.6982ms
+2026/09/06 14:39:53 [DESKTOP-E8PN8I3/q5GnKPibfU-000006] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:50996 - 200 429B in 0s
+2026/09/06 14:40:04 [DESKTOP-E8PN8I3/q5GnKPibfU-000007] "POST http://127.0.0.1:8080/api/v1/auth/login HTTP/1.1" from 127.0.0.1:51000 - 200 819B in 115.198ms
+2026/09/06 14:40:05 [DESKTOP-E8PN8I3/q5GnKPibfU-000008] "POST http://127.0.0.1:8080/api/v1/auth/login HTTP/1.1" from 127.0.0.1:51001 - 200 819B in 110.7293ms
+2026/09/06 14:40:20 [DESKTOP-E8PN8I3/q5GnKPibfU-000011] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:51019 - 200 429B in 2.419156s
+2026/09/06 14:40:20 [DESKTOP-E8PN8I3/q5GnKPibfU-000010] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:51009 - 200 429B in 9.1797165s
+2026/09/06 14:40:20 [DESKTOP-E8PN8I3/q5GnKPibfU-000009] "POST http://127.0.0.1:8080/api/v1/hr/payroll/run HTTP/1.1" from 127.0.0.1:51002 - 500 173B in 15.0266412s
+2026/09/06 14:40:43 [DESKTOP-E8PN8I3/q5GnKPibfU-000012] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:51034 - 200 429B in 0s
+2026/09/06 14:40:58 [DESKTOP-E8PN8I3/q5GnKPibfU-000013] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:51044 - 200 429B in 563.9µs

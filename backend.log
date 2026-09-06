@@ -98,3 +98,6 @@
 2026/09/05 17:31:38 [DESKTOP-E8PN8I3/HxHydRETig-000098] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:55200 - 500 0B in 7.5233ms
 2026/09/05 17:31:38 [DESKTOP-E8PN8I3/HxHydRETig-000099] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:55202 - 500 0B in 1.6259ms
 2026/09/05 17:31:39 [DESKTOP-E8PN8I3/HxHydRETig-000100] "GET http://localhost:8080/api/v1/settings/property HTTP/1.1" from [::1]:55213 - 200 496B in 12.0715ms
+2026/09/05 21:26:40 [DESKTOP-E8PN8I3/HxHydRETig-000101] "GET http://localhost:8080/api/v1/settings/property HTTP/1.1" from [::1]:49703 - 401 55B in 909.0217ms
+2026/09/05 21:26:47 [DESKTOP-E8PN8I3/HxHydRETig-000102] "GET http://localhost:8080/api/v1/settings/property HTTP/1.1" from [::1]:49726 - 401 59B in 3.1215ms
+2026/09/06 08:06:50 [DESKTOP-E8PN8I3/HxHydRETig-000103] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:54425 - 200 213B in 1.1063ms

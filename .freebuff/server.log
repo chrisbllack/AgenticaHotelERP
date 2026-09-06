@@ -1,0 +1,1494 @@
+2026/09/06 11:10:22 Starting INFINEON in demo mode (SQLite)...
+2026/09/06 11:10:22 Running SQLite migrations...
+2026/09/06 11:10:22 [sqlite] All 136 migrations applied successfully
+2026/09/06 11:10:22 Initializing Channel Manager schema...
+2026/09/06 11:10:22 Seeding demo data (including OTA bookings)...
+2026/09/06 11:10:22 [sqlite] Seeding demo data for 50-room Grand Palm Hotel Lagos...
+2026/09/06 11:10:22 [sqlite] Demo seed data complete: 1 property, 50 rooms, 20 guests, 25 reservations (10 in-house), 10 stays, 6 folios, 6 POS orders, 13 housekeeping tasks, 5 loyalty tiers, 4 venues, 3 events, 6 pricing rules, 6 tax rates, 11 payment methods, 14 departments, 8 numbering sequences, 33 system settings, 5 shifts, 8 leave types, 10 holidays, 8 training courses, 15 contracts, 2 performance cycles, 10 profiles, 105 attendance records, 8 leave requests, 15 training enrollments, 8 traces, 6 service requests, 5 interactions, 3 assignment rules, 4 room assignments, 18 OTA bookings
+2026/09/06 11:10:22 Seeding channel connections & mappings...
+2026/09/06 11:10:22 [CHANNEL] Seeded 8 channels, 8 mappings
+2026/09/06 11:10:22 =====================================================
+2026/09/06 11:10:22   INFINEON Enterprise Platform v1.0.0
+2026/09/06 11:10:22   Demo mode | http://localhost:8080
+2026/09/06 11:10:22   Database: SQLite (infineon_demo.db)
+2026/09/06 11:10:22   Channel Manager: Initialized (8 OTA channels, 18 bookings)
+2026/09/06 11:10:22   Admin: admin@infineon.com / admin123
+2026/09/06 11:10:22 =====================================================
+2026/09/06 11:10:38 [DESKTOP-E8PN8I3/lK4alvOZtQ-000001] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:57987 - 200 819B in 85.6559ms
+2026/09/06 11:10:38 [DESKTOP-E8PN8I3/lK4alvOZtQ-000002] "GET http://localhost:8080/api/v1/channels/bookings?channel_id=ch-bkng HTTP/1.1" from [::1]:57988 - 200 3398B in 1.0361ms
+2026/09/06 11:10:38 [DESKTOP-E8PN8I3/lK4alvOZtQ-000003] "GET http://localhost:8080/api/v1/channels/performance HTTP/1.1" from [::1]:57989 - 200 1472B in 1.5604ms
+2026/09/06 11:10:48 [DESKTOP-E8PN8I3/lK4alvOZtQ-000004] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:58004 - 200 4319B in 2.2435ms
+2026/09/06 11:10:48 [DESKTOP-E8PN8I3/lK4alvOZtQ-000005] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:58005 - 200 4319B in 3.678ms
+2026/09/06 11:13:33 [DESKTOP-E8PN8I3/lK4alvOZtQ-000006] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:58056 - 200 4319B in 3.7217ms
+2026/09/06 11:13:33 [DESKTOP-E8PN8I3/lK4alvOZtQ-000007] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:58057 - 200 4319B in 1.6813ms
+2026/09/06 11:14:33 [DESKTOP-E8PN8I3/lK4alvOZtQ-000008] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:58099 - 200 4319B in 21.1234ms
+2026/09/06 11:14:33 [DESKTOP-E8PN8I3/lK4alvOZtQ-000009] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:58100 - 200 4319B in 2.3859ms
+2026/09/06 11:15:17 [DESKTOP-E8PN8I3/lK4alvOZtQ-000010] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:58137 - 200 4319B in 7.9385ms
+2026/09/06 11:15:17 [DESKTOP-E8PN8I3/lK4alvOZtQ-000011] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:58138 - 200 4319B in 1.9977ms
+2026/09/06 11:16:07 [DESKTOP-E8PN8I3/lK4alvOZtQ-000012] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:58198 - 200 4319B in 42.3675ms
+2026/09/06 11:16:07 [DESKTOP-E8PN8I3/lK4alvOZtQ-000013] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:58199 - 200 4319B in 1.0367ms
+2026/09/06 11:16:25 [DESKTOP-E8PN8I3/lK4alvOZtQ-000014] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:58221 - 200 4319B in 2.6893ms
+2026/09/06 11:16:25 [DESKTOP-E8PN8I3/lK4alvOZtQ-000015] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:58222 - 200 4319B in 4.334ms
+2026/09/06 11:17:16 [DESKTOP-E8PN8I3/lK4alvOZtQ-000016] "GET http://localhost:8080/api/v1/channels/bookings?channel_id=ch-direct HTTP/1.1" from [::1]:58255 - 200 18B in 5.1845ms
+2026/09/06 11:17:18 [DESKTOP-E8PN8I3/lK4alvOZtQ-000017] "GET http://localhost:8080/api/v1/channels/bookings?channel_id=ch-bkng HTTP/1.1" from [::1]:58257 - 200 3398B in 508.7µs
+2026/09/06 11:17:19 [DESKTOP-E8PN8I3/lK4alvOZtQ-000018] "GET http://localhost:8080/api/v1/channels/bookings?channel_id=ch-airb HTTP/1.1" from [::1]:58259 - 200 2411B in 552.9µs
+2026/09/06 11:18:07 [DESKTOP-E8PN8I3/lK4alvOZtQ-000019] "GET http://localhost:8080/api/v1/channels/bookings?channel_id=ch-bkng HTTP/1.1" from [::1]:58284 - 200 3398B in 1.0317ms
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000020] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:59076 - 200 213B in 38.0851ms
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000021] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:59076 - 200 213B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000022] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:59076 - 200 819B in 143.0627ms
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000023] "GET http://localhost:8080/api/v1/rooms HTTP/1.1" from [::1]:59076 - 401 59B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000024] "POST http://localhost:8080/api/v1/guests HTTP/1.1" from [::1]:59076 - 401 59B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000025] "POST http://localhost:8080/api/v1/reservations HTTP/1.1" from [::1]:59076 - 401 59B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000026] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:59076 - 401 59B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000027] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:59076 - 401 59B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000028] "GET http://localhost:8080/api/v1/housekeeping/tasks HTTP/1.1" from [::1]:59076 - 404 19B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000029] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:59076 - 401 59B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000030] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:59076 - 401 59B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000031] "GET http://localhost:8080/api/v1/reports/executive HTTP/1.1" from [::1]:59076 - 401 59B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000032] "GET http://localhost:8080/api/v1/channels HTTP/1.1" from [::1]:59076 - 401 59B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000033] "GET http://localhost:8080/api/v1/inventory/products HTTP/1.1" from [::1]:59076 - 401 59B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000034] "POST http://localhost:8080/api/v1/booking/search HTTP/1.1" from [::1]:59076 - 500 173B in 13.7592ms
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000035] "GET http://localhost:8080/api/v1/service-requests HTTP/1.1" from [::1]:59076 - 401 59B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000036] "POST http://localhost:8080/api/v1/seasonal-rate HTTP/1.1" from [::1]:59076 - 401 59B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000037] "POST http://localhost:8080/api/v1/approval-request HTTP/1.1" from [::1]:59076 - 404 19B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000038] "GET http://localhost:8080/api/v1/approval-requests HTTP/1.1" from [::1]:59076 - 404 19B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000039] "GET http://localhost:8080/api/v1/loyalty/tiers HTTP/1.1" from [::1]:59076 - 401 59B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000040] "GET http://localhost:8080/api/v1/permissions HTTP/1.1" from [::1]:59076 - 401 59B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000041] "GET http://localhost:8080/api/v1/night-audit/status HTTP/1.1" from [::1]:59076 - 404 19B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000042] "GET http://localhost:8080/api/v1/properties HTTP/1.1" from [::1]:59076 - 401 59B in 505.1µs
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000043] "POST http://localhost:8080/api/v1/clock-in-out HTTP/1.1" from [::1]:59076 - 404 19B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000044] "GET http://localhost:8080/api/v1/timesheet HTTP/1.1" from [::1]:59076 - 404 19B in 0s
+2026/09/06 11:40:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000045] "GET http://localhost:8080/api/v1/self-service/profile HTTP/1.1" from [::1]:59076 - 404 19B in 0s
+2026/09/06 11:40:17 [DESKTOP-E8PN8I3/lK4alvOZtQ-000046] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:59083 - 200 819B in 312.1199ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000047] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:59145 - 200 213B in 524.7µs
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000048] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:59145 - 200 213B in 0s
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000049] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:59145 - 200 819B in 77.3691ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000050] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:59145 - 401 179B in 525.1µs
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000051] "GET http://localhost:8080/api/v1/rooms HTTP/1.1" from [::1]:59145 - 401 59B in 532.3µs
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000052] "GET http://localhost:8080/api/v1/rooms HTTP/1.1" from [::1]:59145 - 200 11083B in 17.469ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000053] "GET http://localhost:8080/api/v1/room-types HTTP/1.1" from [::1]:59145 - 200 169B in 3.8457ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000054] "GET http://localhost:8080/api/v1/guests HTTP/1.1" from [::1]:59145 - 200 239B in 6.8598ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000055] "GET http://localhost:8080/api/v1/reservations HTTP/1.1" from [::1]:59145 - 500 197B in 2.0143ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000056] "POST http://localhost:8080/api/v1/guests HTTP/1.1" from [::1]:59145 - 201 243B in 4.6264ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000057] "POST http://localhost:8080/api/v1/reservations HTTP/1.1" from [::1]:59145 - 400 307B in 1.5457ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000058] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:59145 - 200 544B in 4.22ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000059] "GET http://localhost:8080/api/v1/rooms HTTP/1.1" from [::1]:59145 - 200 11083B in 2.5218ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000060] "GET http://localhost:8080/api/v1/reservations HTTP/1.1" from [::1]:59145 - 500 197B in 1.09ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000061] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:59145 - 200 429B in 2.2346ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000062] "GET http://localhost:8080/api/v1/pos/menu HTTP/1.1" from [::1]:59145 - 404 19B in 0s
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000063] "GET http://localhost:8080/api/v1/housekeeping/tasks HTTP/1.1" from [::1]:59145 - 404 19B in 0s
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000064] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:59145 - 200 168B in 1.0516ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000065] "GET http://localhost:8080/api/v1/finance/ar HTTP/1.1" from [::1]:59145 - 200 168B in 0s
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000066] "GET http://localhost:8080/api/v1/finance/ap HTTP/1.1" from [::1]:59145 - 200 168B in 0s
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000067] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:59145 - 200 5178B in 1.5745ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000068] "GET http://localhost:8080/api/v1/hr/departments HTTP/1.1" from [::1]:59145 - 404 19B in 0s
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000069] "GET http://localhost:8080/api/v1/reports/executive HTTP/1.1" from [::1]:59145 - 404 19B in 0s
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000070] "GET http://localhost:8080/api/v1/channels HTTP/1.1" from [::1]:59145 - 200 2744B in 1.0594ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000071] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:59145 - 200 4319B in 2.062ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000072] "GET http://localhost:8080/api/v1/channels/performance HTTP/1.1" from [::1]:59145 - 200 1472B in 997.8µs
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000073] "GET http://localhost:8080/api/v1/channels/bookings?channel_id=ch-bkng HTTP/1.1" from [::1]:59145 - 200 3398B in 997.2µs
+2026/09/06 11:41:26 [CHANNEL] Starting rate sync for property 00000000-0000-0000-0000-000000000001
+2026/09/06 11:41:26 [CHANNEL] Rate sync complete: 0 synced, 0 failed
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000074] "POST http://localhost:8080/api/v1/channels/sync-rates HTTP/1.1" from [::1]:59145 - 200 125B in 11.4814ms
+2026/09/06 11:41:26 [CHANNEL] Starting availability sync for property 00000000-0000-0000-0000-000000000001
+2026/09/06 11:41:26 [BOOKING.COM] Pushing 0 availability records
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000075] "POST http://localhost:8080/api/v1/channels/sync-availability HTTP/1.1" from [::1]:59145 - 200 99B in 4.0374ms
+2026/09/06 11:41:26 [CHANNEL] Starting booking pull for property 00000000-0000-0000-0000-000000000001
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000076] "POST http://localhost:8080/api/v1/channels/pull-bookings HTTP/1.1" from [::1]:59145 - 200 134B in 4.5874ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000077] "GET http://localhost:8080/api/v1/inventory/products HTTP/1.1" from [::1]:59145 - 200 4113B in 2.0394ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000078] "GET http://localhost:8080/api/v1/inventory/suppliers HTTP/1.1" from [::1]:59145 - 200 168B in 654.5µs
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000079] "POST http://localhost:8080/api/v1/booking/search HTTP/1.1" from [::1]:59145 - 500 173B in 505.3µs
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000080] "GET http://localhost:8080/api/v1/service-requests HTTP/1.1" from [::1]:59145 - 200 175B in 2.0618ms
+2026/09/06 11:41:26 [RATE] Seasonal rate created: E2E Season (2026-10-06 to 2026-11-05) ₦0/night
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000081] "POST http://localhost:8080/api/v1/seasonal-rate HTTP/1.1" from [::1]:59145 - 201 80B in 998.8µs
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000082] "POST http://localhost:8080/api/v1/approval-request HTTP/1.1" from [::1]:59145 - 404 19B in 0s
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000083] "GET http://localhost:8080/api/v1/approval-requests HTTP/1.1" from [::1]:59145 - 404 19B in 0s
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000084] "GET http://localhost:8080/api/v1/loyalty/tiers HTTP/1.1" from [::1]:59145 - 200 1000B in 1.9941ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000085] "GET http://localhost:8080/api/v1/loyalty/members HTTP/1.1" from [::1]:59145 - 200 238B in 997.8µs
+
+ panic: runtime error: invalid memory address or nil pointer dereference
+ 
+ -> infineon/internal/server/handler.(*Handler).LoyaltyDashboard
+ ->   C:/Users/LENOVO/Documents/Special Project/internal/server/handler/loyalty.go:238
+
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.DemoPropertyID.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/demo.go:13
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.Auth.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/auth.go:32
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/chain.go:31
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/cors.(*Cors).Handler.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/cors@v1.2.1/cors.go:228
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.CorrelationID.func1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/correlation.go:23
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.Recoverer.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/recoverer.go:45
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestLogger.func1.1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/logger.go:55
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RealIP.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/realip.go:36
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestID.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/request_id.go:76
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:90
+    net/http.serverHandler.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:3413
+    net/http.(*conn).serve
+      C:/Program Files/Go/src/net/http/server.go:2137
+    created by net/http.(*Server).Serve in goroutine 1
+      C:/Program Files/Go/src/net/http/server.go:3581
+    
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000086] "GET http://localhost:8080/api/v1/loyalty/dashboard HTTP/1.1" from [::1]:59145 - 500 0B in 16.5322ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000087] "GET http://localhost:8080/api/v1/permissions HTTP/1.1" from [::1]:59145 - 200 3818B in 507.4µs
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000088] "GET http://localhost:8080/api/v1/roles HTTP/1.1" from [::1]:59145 - 200 1209B in 0s
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000089] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:59145 - 401 179B in 79.0865ms
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000090] "GET http://localhost:8080/api/v1/night-audit/status HTTP/1.1" from [::1]:59145 - 404 19B in 0s
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000091] "GET http://localhost:8080/api/v1/properties HTTP/1.1" from [::1]:59145 - 500 193B in 504.2µs
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000092] "POST http://localhost:8080/api/v1/clock-in-out HTTP/1.1" from [::1]:59145 - 404 19B in 0s
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000093] "GET http://localhost:8080/api/v1/timesheet HTTP/1.1" from [::1]:59145 - 404 19B in 0s
+2026/09/06 11:41:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000094] "GET http://localhost:8080/api/v1/self-service/profile HTTP/1.1" from [::1]:59145 - 404 19B in 0s
+2026/09/06 11:42:13 [DESKTOP-E8PN8I3/lK4alvOZtQ-000095] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:59175 - 200 213B in 0s
+2026/09/06 11:42:13 [DESKTOP-E8PN8I3/lK4alvOZtQ-000096] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:59175 - 200 213B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000097] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:59175 - 200 819B in 73.1522ms
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000098] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:59175 - 401 179B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000099] "GET http://localhost:8080/api/v1/rooms HTTP/1.1" from [::1]:59175 - 401 59B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000100] "GET http://localhost:8080/api/v1/rooms HTTP/1.1" from [::1]:59175 - 200 11083B in 1.5269ms
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000101] "GET http://localhost:8080/api/v1/room-types HTTP/1.1" from [::1]:59175 - 200 169B in 527.4µs
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000102] "GET http://localhost:8080/api/v1/guests HTTP/1.1" from [::1]:59175 - 200 370B in 3.0415ms
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000103] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:59175 - 200 5178B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000104] "GET http://localhost:8080/api/v1/channels HTTP/1.1" from [::1]:59175 - 200 2779B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000105] "POST http://localhost:8080/api/v1/reservations HTTP/1.1" from [::1]:59175 - 400 307B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000106] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:59175 - 200 544B in 1.9941ms
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000107] "GET http://localhost:8080/api/v1/rooms HTTP/1.1" from [::1]:59175 - 200 11083B in 1.9949ms
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000108] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:59175 - 200 429B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000109] "GET http://localhost:8080/api/v1/pos/orders HTTP/1.1" from [::1]:59175 - 405 0B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000110] "POST http://localhost:8080/api/v1/pos/orders HTTP/1.1" from [::1]:59175 - 400 205B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000111] "GET http://localhost:8080/api/v1/housekeeping/tasks HTTP/1.1" from [::1]:59175 - 404 19B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000112] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:59175 - 200 168B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000113] "GET http://localhost:8080/api/v1/finance/ar HTTP/1.1" from [::1]:59175 - 200 168B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000114] "GET http://localhost:8080/api/v1/finance/ap HTTP/1.1" from [::1]:59175 - 200 168B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000115] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:59175 - 200 5178B in 997.2µs
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000116] "GET http://localhost:8080/api/v1/hr/attendance HTTP/1.1" from [::1]:59175 - 200 168B in 996.3µs
+
+ panic: interface conversion: interface {} is nil, not string
+ 
+ -> infineon/internal/server/handler.(*Handler).GetDashboard
+ ->   C:/Users/LENOVO/Documents/Special Project/internal/server/handler/reports.go:67
+
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.DemoPropertyID.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/demo.go:13
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.Auth.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/auth.go:32
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/chain.go:31
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/cors.(*Cors).Handler.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/cors@v1.2.1/cors.go:228
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.CorrelationID.func1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/correlation.go:23
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.Recoverer.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/recoverer.go:45
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestLogger.func1.1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/logger.go:55
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RealIP.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/realip.go:36
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestID.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/request_id.go:76
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:90
+    net/http.serverHandler.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:3413
+    net/http.(*conn).serve
+      C:/Program Files/Go/src/net/http/server.go:2137
+    created by net/http.(*Server).Serve in goroutine 1
+      C:/Program Files/Go/src/net/http/server.go:3581
+    
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000117] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:59175 - 500 0B in 2.9912ms
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000118] "GET http://localhost:8080/api/v1/reports/occupancy HTTP/1.1" from [::1]:59175 - 200 1119B in 2.9927ms
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000119] "GET http://localhost:8080/api/v1/reports/revenue HTTP/1.1" from [::1]:59175 - 200 862B in 1.9952ms
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000120] "GET http://localhost:8080/api/v1/channels HTTP/1.1" from [::1]:59175 - 200 2779B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000121] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:59175 - 200 4354B in 997.3µs
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000122] "GET http://localhost:8080/api/v1/channels/performance HTTP/1.1" from [::1]:59175 - 200 1472B in 997µs
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000123] "GET http://localhost:8080/api/v1/channels/bookings?channel_id=ch-bkng HTTP/1.1" from [::1]:59175 - 200 3398B in 0s
+2026/09/06 11:42:14 [CHANNEL] Starting rate sync for property 00000000-0000-0000-0000-000000000001
+2026/09/06 11:42:14 [CHANNEL] Rate sync complete: 0 synced, 0 failed
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000124] "POST http://localhost:8080/api/v1/channels/sync-rates HTTP/1.1" from [::1]:59175 - 200 125B in 3.9888ms
+2026/09/06 11:42:14 [CHANNEL] Starting availability sync for property 00000000-0000-0000-0000-000000000001
+2026/09/06 11:42:14 [BOOKING.COM] Pushing 0 availability records
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000125] "POST http://localhost:8080/api/v1/channels/sync-availability HTTP/1.1" from [::1]:59175 - 200 99B in 997.6µs
+2026/09/06 11:42:14 [CHANNEL] Starting booking pull for property 00000000-0000-0000-0000-000000000001
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000126] "POST http://localhost:8080/api/v1/channels/pull-bookings HTTP/1.1" from [::1]:59175 - 200 134B in 1.994ms
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000127] "GET http://localhost:8080/api/v1/inventory/products HTTP/1.1" from [::1]:59175 - 200 4113B in 998.3µs
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000128] "GET http://localhost:8080/api/v1/inventory/suppliers HTTP/1.1" from [::1]:59175 - 200 168B in 996.8µs
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000129] "POST http://localhost:8080/api/v1/booking/search HTTP/1.1" from [::1]:59175 - 500 173B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000130] "GET http://localhost:8080/api/v1/service-requests HTTP/1.1" from [::1]:59175 - 200 175B in 0s
+2026/09/06 11:42:14 [RATE] Seasonal rate created: Test Season (2026-10-06 to 2026-11-05) ₦0/night
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000131] "POST http://localhost:8080/api/v1/seasonal-rate HTTP/1.1" from [::1]:59175 - 201 80B in 997.5µs
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000132] "POST http://localhost:8080/api/v1/approval-request HTTP/1.1" from [::1]:59175 - 404 19B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000133] "GET http://localhost:8080/api/v1/approval-requests HTTP/1.1" from [::1]:59175 - 404 19B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000134] "GET http://localhost:8080/api/v1/loyalty/tiers HTTP/1.1" from [::1]:59175 - 200 1000B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000135] "GET http://localhost:8080/api/v1/loyalty/members HTTP/1.1" from [::1]:59175 - 200 238B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000136] "GET http://localhost:8080/api/v1/permissions HTTP/1.1" from [::1]:59175 - 200 3818B in 997.2µs
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000137] "GET http://localhost:8080/api/v1/roles HTTP/1.1" from [::1]:59175 - 200 1209B in 997.6µs
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000138] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:59175 - 401 179B in 73.1716ms
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000139] "GET http://localhost:8080/api/v1/night-audit/status HTTP/1.1" from [::1]:59175 - 404 19B in 0s
+2026/09/06 11:42:14 [NIGHT AUDIT] Starting for property 00000000-0000-0000-0000-000000000001
+2026/09/06 11:42:14 [NIGHT AUDIT] Completed: failed
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000140] "POST http://localhost:8080/api/v1/night-audit/run HTTP/1.1" from [::1]:59175 - 200 1537B in 552.1µs
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000141] "GET http://localhost:8080/api/v1/properties HTTP/1.1" from [::1]:59175 - 500 193B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000142] "POST http://localhost:8080/api/v1/clock-in-out HTTP/1.1" from [::1]:59175 - 404 19B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000143] "GET http://localhost:8080/api/v1/timesheet HTTP/1.1" from [::1]:59175 - 404 19B in 0s
+2026/09/06 11:42:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000144] "GET http://localhost:8080/api/v1/self-service/profile HTTP/1.1" from [::1]:59175 - 404 19B in 0s
+2026/09/06 12:06:33 [DESKTOP-E8PN8I3/lK4alvOZtQ-000145] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:59787 - 200 213B in 2.6486ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000146] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:59790 - 200 213B in 1.3145ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000147] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:59790 - 200 213B in 526.9µs
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000148] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:59790 - 200 819B in 78.7169ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000149] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:59790 - 401 179B in 0s
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000150] "GET http://localhost:8080/api/v1/rooms HTTP/1.1" from [::1]:59790 - 401 59B in 0s
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000151] "GET http://localhost:8080/api/v1/rooms HTTP/1.1" from [::1]:59790 - 200 11083B in 3.1342ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000152] "GET http://localhost:8080/api/v1/room-types HTTP/1.1" from [::1]:59790 - 200 169B in 524.8µs
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000153] "GET http://localhost:8080/api/v1/guests HTTP/1.1" from [::1]:59790 - 200 370B in 517.6µs
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000154] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:59790 - 200 5178B in 2.507ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000155] "GET http://localhost:8080/api/v1/channels HTTP/1.1" from [::1]:59790 - 200 2779B in 910µs
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000156] "POST http://localhost:8080/api/v1/reservations HTTP/1.1" from [::1]:59790 - 400 307B in 0s
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000157] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:59790 - 200 544B in 3.6687ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000158] "GET http://localhost:8080/api/v1/rooms HTTP/1.1" from [::1]:59790 - 200 11083B in 1.5841ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000159] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:59790 - 200 429B in 505.2µs
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000160] "GET http://localhost:8080/api/v1/pos/orders HTTP/1.1" from [::1]:59790 - 405 0B in 0s
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000161] "POST http://localhost:8080/api/v1/pos/orders HTTP/1.1" from [::1]:59790 - 400 205B in 335.9µs
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000162] "GET http://localhost:8080/api/v1/housekeeping/tasks HTTP/1.1" from [::1]:59790 - 404 19B in 0s
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000163] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:59790 - 200 168B in 0s
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000164] "GET http://localhost:8080/api/v1/finance/ar HTTP/1.1" from [::1]:59790 - 200 168B in 1.0032ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000165] "GET http://localhost:8080/api/v1/finance/ap HTTP/1.1" from [::1]:59790 - 200 168B in 0s
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000166] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:59790 - 200 5178B in 1.9944ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000167] "GET http://localhost:8080/api/v1/hr/attendance HTTP/1.1" from [::1]:59790 - 200 168B in 0s
+
+ panic: interface conversion: interface {} is nil, not string
+ 
+ -> infineon/internal/server/handler.(*Handler).GetDashboard
+ ->   C:/Users/LENOVO/Documents/Special Project/internal/server/handler/reports.go:67
+
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.DemoPropertyID.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/demo.go:13
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.Auth.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/auth.go:32
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/chain.go:31
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/cors.(*Cors).Handler.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/cors@v1.2.1/cors.go:228
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.CorrelationID.func1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/correlation.go:23
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.Recoverer.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/recoverer.go:45
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestLogger.func1.1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/logger.go:55
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RealIP.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/realip.go:36
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestID.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/request_id.go:76
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:90
+    net/http.serverHandler.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:3413
+    net/http.(*conn).serve
+      C:/Program Files/Go/src/net/http/server.go:2137
+    created by net/http.(*Server).Serve in goroutine 1
+      C:/Program Files/Go/src/net/http/server.go:3581
+    
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000168] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:59790 - 500 0B in 1.0552ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000169] "GET http://localhost:8080/api/v1/reports/occupancy HTTP/1.1" from [::1]:59790 - 200 1119B in 2.6528ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000170] "GET http://localhost:8080/api/v1/reports/revenue HTTP/1.1" from [::1]:59790 - 200 862B in 5.1665ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000171] "GET http://localhost:8080/api/v1/channels HTTP/1.1" from [::1]:59790 - 200 2779B in 524.6µs
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000172] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:59790 - 200 4354B in 1.0155ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000173] "GET http://localhost:8080/api/v1/channels/performance HTTP/1.1" from [::1]:59790 - 200 1472B in 943.7µs
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000174] "GET http://localhost:8080/api/v1/channels/bookings?channel_id=ch-bkng HTTP/1.1" from [::1]:59790 - 200 3398B in 526.5µs
+2026/09/06 12:06:51 [CHANNEL] Starting rate sync for property 00000000-0000-0000-0000-000000000001
+2026/09/06 12:06:51 [CHANNEL] Rate sync complete: 0 synced, 0 failed
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000175] "POST http://localhost:8080/api/v1/channels/sync-rates HTTP/1.1" from [::1]:59790 - 200 125B in 3.235ms
+2026/09/06 12:06:51 [CHANNEL] Starting availability sync for property 00000000-0000-0000-0000-000000000001
+2026/09/06 12:06:51 [BOOKING.COM] Pushing 0 availability records
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000176] "POST http://localhost:8080/api/v1/channels/sync-availability HTTP/1.1" from [::1]:59790 - 200 99B in 3.3511ms
+2026/09/06 12:06:51 [CHANNEL] Starting booking pull for property 00000000-0000-0000-0000-000000000001
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000177] "POST http://localhost:8080/api/v1/channels/pull-bookings HTTP/1.1" from [::1]:59790 - 200 134B in 3.0751ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000178] "GET http://localhost:8080/api/v1/inventory/products HTTP/1.1" from [::1]:59790 - 200 4113B in 2.2894ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000179] "GET http://localhost:8080/api/v1/inventory/suppliers HTTP/1.1" from [::1]:59790 - 200 168B in 505.4µs
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000180] "POST http://localhost:8080/api/v1/booking/search HTTP/1.1" from [::1]:59790 - 500 173B in 0s
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000181] "GET http://localhost:8080/api/v1/service-requests HTTP/1.1" from [::1]:59790 - 200 175B in 536.7µs
+2026/09/06 12:06:51 [RATE] Seasonal rate created: Test Season (2026-10-06 to 2026-11-05) ₦0/night
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000182] "POST http://localhost:8080/api/v1/seasonal-rate HTTP/1.1" from [::1]:59790 - 201 80B in 530.6µs
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000183] "POST http://localhost:8080/api/v1/approval-request HTTP/1.1" from [::1]:59790 - 404 19B in 0s
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000184] "GET http://localhost:8080/api/v1/approval-requests HTTP/1.1" from [::1]:59790 - 404 19B in 0s
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000185] "GET http://localhost:8080/api/v1/loyalty/tiers HTTP/1.1" from [::1]:59790 - 200 1000B in 523.5µs
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000186] "GET http://localhost:8080/api/v1/loyalty/members HTTP/1.1" from [::1]:59790 - 200 238B in 554µs
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000187] "GET http://localhost:8080/api/v1/permissions HTTP/1.1" from [::1]:59790 - 200 3818B in 0s
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000188] "GET http://localhost:8080/api/v1/roles HTTP/1.1" from [::1]:59790 - 200 1209B in 110.4µs
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000189] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:59790 - 401 179B in 76.6091ms
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000190] "GET http://localhost:8080/api/v1/night-audit/status HTTP/1.1" from [::1]:59790 - 404 19B in 0s
+2026/09/06 12:06:51 [NIGHT AUDIT] Starting for property 00000000-0000-0000-0000-000000000001
+2026/09/06 12:06:51 [NIGHT AUDIT] Completed: failed
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000191] "POST http://localhost:8080/api/v1/night-audit/run HTTP/1.1" from [::1]:59790 - 200 1537B in 0s
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000192] "GET http://localhost:8080/api/v1/properties HTTP/1.1" from [::1]:59790 - 500 193B in 523.2µs
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000193] "POST http://localhost:8080/api/v1/clock-in-out HTTP/1.1" from [::1]:59790 - 404 19B in 0s
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000194] "GET http://localhost:8080/api/v1/timesheet HTTP/1.1" from [::1]:59790 - 404 19B in 0s
+2026/09/06 12:06:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000195] "GET http://localhost:8080/api/v1/self-service/profile HTTP/1.1" from [::1]:59790 - 404 19B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000196] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:60118 - 200 213B in 3.0187ms
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000197] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:60118 - 200 213B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000198] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:60118 - 200 819B in 74.9534ms
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000199] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:60118 - 401 179B in 2.6199ms
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000200] "GET http://localhost:8080/api/v1/rooms HTTP/1.1" from [::1]:60118 - 401 59B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000201] "GET http://localhost:8080/api/v1/rooms HTTP/1.1" from [::1]:60118 - 200 11083B in 3.6759ms
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000202] "GET http://localhost:8080/api/v1/room-types HTTP/1.1" from [::1]:60118 - 200 169B in 551.9µs
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000203] "GET http://localhost:8080/api/v1/guests HTTP/1.1" from [::1]:60118 - 200 370B in 546.7µs
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000204] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:60118 - 200 5178B in 505.6µs
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000205] "GET http://localhost:8080/api/v1/channels HTTP/1.1" from [::1]:60118 - 200 2779B in 537.3µs
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000206] "POST http://localhost:8080/api/v1/reservations HTTP/1.1" from [::1]:60118 - 400 307B in 534.1µs
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000207] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:60118 - 200 544B in 1.0608ms
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000208] "GET http://localhost:8080/api/v1/rooms HTTP/1.1" from [::1]:60118 - 200 11083B in 1.0547ms
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000209] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:60118 - 200 429B in 530.2µs
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000210] "GET http://localhost:8080/api/v1/pos/orders HTTP/1.1" from [::1]:60118 - 405 0B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000211] "POST http://localhost:8080/api/v1/pos/orders HTTP/1.1" from [::1]:60118 - 400 205B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000212] "GET http://localhost:8080/api/v1/housekeeping/tasks HTTP/1.1" from [::1]:60118 - 404 19B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000213] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:60118 - 200 168B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000214] "GET http://localhost:8080/api/v1/finance/ar HTTP/1.1" from [::1]:60118 - 200 168B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000215] "GET http://localhost:8080/api/v1/finance/ap HTTP/1.1" from [::1]:60118 - 200 168B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000216] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:60118 - 200 5178B in 638.1µs
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000217] "GET http://localhost:8080/api/v1/hr/attendance HTTP/1.1" from [::1]:60118 - 200 168B in 531µs
+
+ panic: interface conversion: interface {} is nil, not string
+ 
+ -> infineon/internal/server/handler.(*Handler).GetDashboard
+ ->   C:/Users/LENOVO/Documents/Special Project/internal/server/handler/reports.go:67
+
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.DemoPropertyID.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/demo.go:13
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.Auth.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/auth.go:32
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/chain.go:31
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/cors.(*Cors).Handler.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/cors@v1.2.1/cors.go:228
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.CorrelationID.func1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/correlation.go:23
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.Recoverer.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/recoverer.go:45
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestLogger.func1.1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/logger.go:55
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RealIP.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/realip.go:36
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestID.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/request_id.go:76
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:90
+    net/http.serverHandler.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:3413
+    net/http.(*conn).serve
+      C:/Program Files/Go/src/net/http/server.go:2137
+    created by net/http.(*Server).Serve in goroutine 1
+      C:/Program Files/Go/src/net/http/server.go:3581
+    
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000218] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:60118 - 500 0B in 1.0451ms
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000219] "GET http://localhost:8080/api/v1/reports/occupancy HTTP/1.1" from [::1]:60118 - 200 1119B in 4.3862ms
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000220] "GET http://localhost:8080/api/v1/reports/revenue HTTP/1.1" from [::1]:60118 - 200 862B in 1.6146ms
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000221] "GET http://localhost:8080/api/v1/channels HTTP/1.1" from [::1]:60118 - 200 2779B in 528.6µs
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000222] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:60118 - 200 4354B in 2.6116ms
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000223] "GET http://localhost:8080/api/v1/channels/performance HTTP/1.1" from [::1]:60118 - 200 1472B in 2.1016ms
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000224] "GET http://localhost:8080/api/v1/channels/bookings?channel_id=ch-bkng HTTP/1.1" from [::1]:60118 - 200 3398B in 671.6µs
+2026/09/06 12:18:21 [CHANNEL] Starting rate sync for property 00000000-0000-0000-0000-000000000001
+2026/09/06 12:18:21 [CHANNEL] Rate sync complete: 0 synced, 0 failed
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000225] "POST http://localhost:8080/api/v1/channels/sync-rates HTTP/1.1" from [::1]:60118 - 200 125B in 6.4351ms
+2026/09/06 12:18:21 [CHANNEL] Starting availability sync for property 00000000-0000-0000-0000-000000000001
+2026/09/06 12:18:21 [BOOKING.COM] Pushing 0 availability records
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000226] "POST http://localhost:8080/api/v1/channels/sync-availability HTTP/1.1" from [::1]:60118 - 200 99B in 2.6375ms
+2026/09/06 12:18:21 [CHANNEL] Starting booking pull for property 00000000-0000-0000-0000-000000000001
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000227] "POST http://localhost:8080/api/v1/channels/pull-bookings HTTP/1.1" from [::1]:60118 - 200 134B in 3.1704ms
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000228] "GET http://localhost:8080/api/v1/inventory/products HTTP/1.1" from [::1]:60118 - 200 4113B in 1.6149ms
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000229] "GET http://localhost:8080/api/v1/inventory/suppliers HTTP/1.1" from [::1]:60118 - 200 168B in 504.4µs
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000230] "POST http://localhost:8080/api/v1/booking/search HTTP/1.1" from [::1]:60118 - 500 173B in 523.1µs
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000231] "GET http://localhost:8080/api/v1/service-requests HTTP/1.1" from [::1]:60118 - 200 175B in 526.6µs
+2026/09/06 12:18:21 [RATE] Seasonal rate created: Test Season (2026-10-06 to 2026-11-05) ₦0/night
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000232] "POST http://localhost:8080/api/v1/seasonal-rate HTTP/1.1" from [::1]:60118 - 201 80B in 527.4µs
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000233] "POST http://localhost:8080/api/v1/approval-request HTTP/1.1" from [::1]:60118 - 404 19B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000234] "GET http://localhost:8080/api/v1/approval-requests HTTP/1.1" from [::1]:60118 - 404 19B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000235] "GET http://localhost:8080/api/v1/loyalty/tiers HTTP/1.1" from [::1]:60118 - 200 1000B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000236] "GET http://localhost:8080/api/v1/loyalty/members HTTP/1.1" from [::1]:60118 - 200 238B in 526.4µs
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000237] "GET http://localhost:8080/api/v1/permissions HTTP/1.1" from [::1]:60118 - 200 3818B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000238] "GET http://localhost:8080/api/v1/roles HTTP/1.1" from [::1]:60118 - 200 1209B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000239] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:60118 - 401 179B in 70.4049ms
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000240] "GET http://localhost:8080/api/v1/night-audit/status HTTP/1.1" from [::1]:60118 - 404 19B in 0s
+2026/09/06 12:18:21 [NIGHT AUDIT] Starting for property 00000000-0000-0000-0000-000000000001
+2026/09/06 12:18:21 [NIGHT AUDIT] Completed: failed
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000241] "POST http://localhost:8080/api/v1/night-audit/run HTTP/1.1" from [::1]:60118 - 200 1538B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000242] "GET http://localhost:8080/api/v1/properties HTTP/1.1" from [::1]:60118 - 500 193B in 534.8µs
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000243] "POST http://localhost:8080/api/v1/clock-in-out HTTP/1.1" from [::1]:60118 - 404 19B in 538µs
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000244] "GET http://localhost:8080/api/v1/timesheet HTTP/1.1" from [::1]:60118 - 404 19B in 0s
+2026/09/06 12:18:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000245] "GET http://localhost:8080/api/v1/self-service/profile HTTP/1.1" from [::1]:60118 - 404 19B in 0s
+2026/09/06 12:18:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000246] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:60130 - 200 213B in 0s
+2026/09/06 12:36:10 [DESKTOP-E8PN8I3/lK4alvOZtQ-000247] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61495 - 200 819B in 94.0887ms
+2026/09/06 12:36:10 [DESKTOP-E8PN8I3/lK4alvOZtQ-000248] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61497 - 200 544B in 20.3389ms
+2026/09/06 12:36:24 [DESKTOP-E8PN8I3/lK4alvOZtQ-000249] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61517 - 401 179B in 501.7999ms
+2026/09/06 12:36:37 [DESKTOP-E8PN8I3/lK4alvOZtQ-000250] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61523 - 200 819B in 89.1089ms
+2026/09/06 12:36:38 [DESKTOP-E8PN8I3/lK4alvOZtQ-000251] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61535 - 200 544B in 7.1819ms
+2026/09/06 12:36:42 [DESKTOP-E8PN8I3/lK4alvOZtQ-000252] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61546 - 200 819B in 122.8898ms
+2026/09/06 12:36:43 [DESKTOP-E8PN8I3/lK4alvOZtQ-000253] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61556 - 200 544B in 11.0982ms
+2026/09/06 12:36:44 [DESKTOP-E8PN8I3/lK4alvOZtQ-000256] "GET http://localhost:8080/api/v1/reservations?status=confirmed HTTP/1.1" from [::1]:61560 - 500 197B in 32.1365ms
+2026/09/06 12:36:44 [DESKTOP-E8PN8I3/lK4alvOZtQ-000255] "GET http://localhost:8080/api/v1/rooms?per_page=200 HTTP/1.1" from [::1]:61559 - 200 11083B in 44.3306ms
+2026/09/06 12:36:44 [DESKTOP-E8PN8I3/lK4alvOZtQ-000254] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61558 - 200 544B in 45.3646ms
+2026/09/06 12:36:44 [DESKTOP-E8PN8I3/lK4alvOZtQ-000257] "GET http://localhost:8080/api/v1/reservations?status=checked_in HTTP/1.1" from [::1]:61561 - 500 197B in 30.0481ms
+2026/09/06 12:36:49 [DESKTOP-E8PN8I3/lK4alvOZtQ-000258] "GET http://localhost:8080/api/v1/reservations?status=confirmed HTTP/1.1" from [::1]:61565 - 500 197B in 696.5µs
+2026/09/06 12:36:49 [DESKTOP-E8PN8I3/lK4alvOZtQ-000259] "GET http://localhost:8080/api/v1/reservations?status=checked_in HTTP/1.1" from [::1]:61566 - 500 197B in 506.6µs
+2026/09/06 12:36:50 [DESKTOP-E8PN8I3/lK4alvOZtQ-000260] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61568 - 200 819B in 197.6028ms
+2026/09/06 12:36:52 [DESKTOP-E8PN8I3/lK4alvOZtQ-000261] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61577 - 200 544B in 2.6381ms
+2026/09/06 12:36:53 [DESKTOP-E8PN8I3/lK4alvOZtQ-000264] "GET http://localhost:8080/api/v1/reservations?status=confirmed HTTP/1.1" from [::1]:61584 - 500 197B in 1.6013ms
+2026/09/06 12:36:53 [DESKTOP-E8PN8I3/lK4alvOZtQ-000265] "GET http://localhost:8080/api/v1/reservations?status=checked_in HTTP/1.1" from [::1]:61585 - 500 197B in 1.038ms
+2026/09/06 12:36:53 [DESKTOP-E8PN8I3/lK4alvOZtQ-000263] "GET http://localhost:8080/api/v1/rooms?per_page=200 HTTP/1.1" from [::1]:61583 - 200 11083B in 1.6013ms
+2026/09/06 12:36:53 [DESKTOP-E8PN8I3/lK4alvOZtQ-000262] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61582 - 200 544B in 5.3487ms
+2026/09/06 12:36:54 [DESKTOP-E8PN8I3/lK4alvOZtQ-000266] "GET http://localhost:8080/api/v1/reservations?status=confirmed HTTP/1.1" from [::1]:61589 - 500 197B in 508µs
+2026/09/06 12:36:54 [DESKTOP-E8PN8I3/lK4alvOZtQ-000267] "GET http://localhost:8080/api/v1/reservations?status=checked_in HTTP/1.1" from [::1]:61590 - 500 197B in 508µs
+2026/09/06 12:36:58 [DESKTOP-E8PN8I3/lK4alvOZtQ-000268] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61592 - 200 819B in 209.375ms
+2026/09/06 12:36:59 [DESKTOP-E8PN8I3/lK4alvOZtQ-000269] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61602 - 200 544B in 1.7233ms
+2026/09/06 12:37:00 [DESKTOP-E8PN8I3/lK4alvOZtQ-000270] "GET http://localhost:8080/api/v1/reservations?page=1&per_page=20 HTTP/1.1" from [::1]:61605 - 500 197B in 12.8854ms
+2026/09/06 12:37:01 [DESKTOP-E8PN8I3/lK4alvOZtQ-000271] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61592 - 200 819B in 83.3793ms
+2026/09/06 12:37:05 [DESKTOP-E8PN8I3/lK4alvOZtQ-000272] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61616 - 200 544B in 1.5945ms
+2026/09/06 12:37:06 [DESKTOP-E8PN8I3/lK4alvOZtQ-000273] "GET http://localhost:8080/api/v1/reservations?page=1&per_page=20 HTTP/1.1" from [::1]:61618 - 500 197B in 510.9µs
+2026/09/06 12:37:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000274] "GET http://localhost:8080/api/v1/reservations?page=1&per_page=20 HTTP/1.1" from [::1]:61620 - 500 197B in 767.3552ms
+2026/09/06 12:37:16 [DESKTOP-E8PN8I3/lK4alvOZtQ-000275] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61635 - 200 819B in 103.6757ms
+2026/09/06 12:37:19 [DESKTOP-E8PN8I3/lK4alvOZtQ-000276] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61646 - 200 544B in 24.191ms
+2026/09/06 12:37:20 [DESKTOP-E8PN8I3/lK4alvOZtQ-000277] "GET http://localhost:8080/api/v1/rooms?per_page=200 HTTP/1.1" from [::1]:61648 - 200 11083B in 2.0803ms
+2026/09/06 12:37:24 [DESKTOP-E8PN8I3/lK4alvOZtQ-000278] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61651 - 200 819B in 127.2178ms
+2026/09/06 12:37:25 [DESKTOP-E8PN8I3/lK4alvOZtQ-000279] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61661 - 200 544B in 1.0389ms
+2026/09/06 12:37:27 [DESKTOP-E8PN8I3/lK4alvOZtQ-000280] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:61664 - 200 429B in 450.2755ms
+2026/09/06 12:37:30 [DESKTOP-E8PN8I3/lK4alvOZtQ-000281] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61668 - 200 819B in 148.3836ms
+2026/09/06 12:37:31 [DESKTOP-E8PN8I3/lK4alvOZtQ-000282] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61678 - 200 544B in 1.0662ms
+2026/09/06 12:37:32 [DESKTOP-E8PN8I3/lK4alvOZtQ-000283] "GET http://localhost:8080/api/v1/inventory/products?search=&per_page=50 HTTP/1.1" from [::1]:61683 - 200 4113B in 16.9905ms
+2026/09/06 12:37:35 [DESKTOP-E8PN8I3/lK4alvOZtQ-000284] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61690 - 200 819B in 101.8864ms
+2026/09/06 12:37:36 [DESKTOP-E8PN8I3/lK4alvOZtQ-000285] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61706 - 200 544B in 1.5814ms
+2026/09/06 12:37:37 [DESKTOP-E8PN8I3/lK4alvOZtQ-000286] "GET http://localhost:8080/api/v1/rooms?per_page=200 HTTP/1.1" from [::1]:61708 - 200 11083B in 1.0356ms
+2026/09/06 12:37:40 [DESKTOP-E8PN8I3/lK4alvOZtQ-000287] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61710 - 200 819B in 219.5922ms
+2026/09/06 12:37:42 [DESKTOP-E8PN8I3/lK4alvOZtQ-000288] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61720 - 200 544B in 2.2639ms
+2026/09/06 12:37:43 [DESKTOP-E8PN8I3/lK4alvOZtQ-000290] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:61723 - 200 168B in 506.8µs
+2026/09/06 12:37:43 [DESKTOP-E8PN8I3/lK4alvOZtQ-000289] "GET http://localhost:8080/api/v1/finance/accounts/classes HTTP/1.1" from [::1]:61722 - 200 366B in 2.2064ms
+2026/09/06 12:37:43 [DESKTOP-E8PN8I3/lK4alvOZtQ-000291] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:61724 - 200 168B in 507.3µs
+2026/09/06 12:37:43 [DESKTOP-E8PN8I3/lK4alvOZtQ-000292] "GET http://localhost:8080/api/v1/finance/accounts/classes HTTP/1.1" from [::1]:61725 - 200 366B in 996.2µs
+2026/09/06 12:37:46 [DESKTOP-E8PN8I3/lK4alvOZtQ-000293] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61729 - 200 819B in 216.6246ms
+2026/09/06 12:37:48 [DESKTOP-E8PN8I3/lK4alvOZtQ-000294] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61741 - 200 544B in 1.5628ms
+2026/09/06 12:37:49 [DESKTOP-E8PN8I3/lK4alvOZtQ-000295] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:61743 - 200 4354B in 27.8526ms
+2026/09/06 12:37:49 [DESKTOP-E8PN8I3/lK4alvOZtQ-000296] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:61744 - 200 4354B in 13.9754ms
+2026/09/06 12:37:54 [DESKTOP-E8PN8I3/lK4alvOZtQ-000297] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61765 - 200 819B in 259.9392ms
+2026/09/06 12:37:54 [DESKTOP-E8PN8I3/lK4alvOZtQ-000298] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61776 - 200 819B in 225.179ms
+2026/09/06 12:37:54 [DESKTOP-E8PN8I3/lK4alvOZtQ-000299] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61778 - 200 544B in 1.8845ms
+2026/09/06 12:37:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000300] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61797 - 200 544B in 2.9928ms
+2026/09/06 12:37:57 [DESKTOP-E8PN8I3/lK4alvOZtQ-000301] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:61800 - 200 4354B in 14.7796ms
+2026/09/06 12:37:57 [DESKTOP-E8PN8I3/lK4alvOZtQ-000302] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:61801 - 200 4354B in 32.2381ms
+2026/09/06 12:37:57 [DESKTOP-E8PN8I3/lK4alvOZtQ-000303] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61804 - 401 179B in 0s
+2026/09/06 12:38:00 [CHANNEL] Starting rate sync for property 00000000-0000-0000-0000-000000000001
+2026/09/06 12:38:00 [CHANNEL] Rate sync complete: 0 synced, 0 failed
+2026/09/06 12:38:00 [DESKTOP-E8PN8I3/lK4alvOZtQ-000304] "POST http://localhost:8080/api/v1/channels/sync-rates HTTP/1.1" from [::1]:61808 - 200 125B in 14.0983ms
+2026/09/06 12:38:00 [DESKTOP-E8PN8I3/lK4alvOZtQ-000305] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:61809 - 200 4354B in 1.9492ms
+2026/09/06 12:38:02 [DESKTOP-E8PN8I3/lK4alvOZtQ-000306] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61815 - 200 819B in 118.0549ms
+2026/09/06 12:38:03 [DESKTOP-E8PN8I3/lK4alvOZtQ-000307] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61827 - 200 819B in 467.412ms
+2026/09/06 12:38:03 [DESKTOP-E8PN8I3/lK4alvOZtQ-000308] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61841 - 200 544B in 1.9945ms
+2026/09/06 12:38:06 [DESKTOP-E8PN8I3/lK4alvOZtQ-000310] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61851 - 200 544B in 31.915ms
+2026/09/06 12:38:06 [DESKTOP-E8PN8I3/lK4alvOZtQ-000309] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61815 - 200 819B in 597.4988ms
+2026/09/06 12:38:07 [DESKTOP-E8PN8I3/lK4alvOZtQ-000311] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:61864 - 200 5178B in 15.1971ms
+2026/09/06 12:38:07 [DESKTOP-E8PN8I3/lK4alvOZtQ-000312] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:61865 - 200 5178B in 0s
+2026/09/06 12:38:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000313] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61872 - 200 544B in 1.9959ms
+2026/09/06 12:38:09 [DESKTOP-E8PN8I3/lK4alvOZtQ-000316] "GET http://localhost:8080/api/v1/reservations?status=confirmed HTTP/1.1" from [::1]:61877 - 500 197B in 1.1814ms
+2026/09/06 12:38:09 [DESKTOP-E8PN8I3/lK4alvOZtQ-000317] "GET http://localhost:8080/api/v1/reservations?status=checked_in HTTP/1.1" from [::1]:61878 - 500 197B in 5.2197ms
+2026/09/06 12:38:09 [DESKTOP-E8PN8I3/lK4alvOZtQ-000315] "GET http://localhost:8080/api/v1/rooms?per_page=200 HTTP/1.1" from [::1]:61876 - 200 11083B in 6.7383ms
+2026/09/06 12:38:09 [DESKTOP-E8PN8I3/lK4alvOZtQ-000314] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61875 - 200 544B in 11.4818ms
+2026/09/06 12:38:11 [DESKTOP-E8PN8I3/lK4alvOZtQ-000318] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61887 - 200 819B in 483.2521ms
+2026/09/06 12:38:11 [DESKTOP-E8PN8I3/lK4alvOZtQ-000319] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61890 - 200 819B in 434.7904ms
+2026/09/06 12:38:13 [DESKTOP-E8PN8I3/lK4alvOZtQ-000320] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61910 - 200 544B in 2.6411ms
+
+ panic: interface conversion: interface {} is nil, not string
+ 
+ -> infineon/internal/server/handler.(*Handler).GetDashboard
+ ->   C:/Users/LENOVO/Documents/Special Project/internal/server/handler/reports.go:67
+
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.DemoPropertyID.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/demo.go:13
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.Auth.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/auth.go:32
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/chain.go:31
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/cors.(*Cors).Handler.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/cors@v1.2.1/cors.go:228
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.CorrelationID.func1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/correlation.go:23
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.Recoverer.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/recoverer.go:45
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestLogger.func1.1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/logger.go:55
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RealIP.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/realip.go:36
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestID.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/request_id.go:76
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:90
+    net/http.serverHandler.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:3413
+    net/http.(*conn).serve
+      C:/Program Files/Go/src/net/http/server.go:2137
+    created by net/http.(*Server).Serve in goroutine 1
+      C:/Program Files/Go/src/net/http/server.go:3581
+    
+2026/09/06 12:38:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000321] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:61912 - 500 0B in 1.6275ms
+
+ panic: interface conversion: interface {} is nil, not string
+ 
+ -> infineon/internal/server/handler.(*Handler).GetDashboard
+ ->   C:/Users/LENOVO/Documents/Special Project/internal/server/handler/reports.go:67
+
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.DemoPropertyID.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/demo.go:13
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.Auth.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/auth.go:32
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/chain.go:31
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/cors.(*Cors).Handler.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/cors@v1.2.1/cors.go:228
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.CorrelationID.func1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/correlation.go:23
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.Recoverer.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/recoverer.go:45
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestLogger.func1.1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/logger.go:55
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RealIP.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/realip.go:36
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestID.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/request_id.go:76
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:90
+    net/http.serverHandler.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:3413
+    net/http.(*conn).serve
+      C:/Program Files/Go/src/net/http/server.go:2137
+    created by net/http.(*Server).Serve in goroutine 1
+      C:/Program Files/Go/src/net/http/server.go:3581
+    
+2026/09/06 12:38:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000322] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:61913 - 500 0B in 1.8355ms
+2026/09/06 12:38:18 [DESKTOP-E8PN8I3/lK4alvOZtQ-000323] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61920 - 200 819B in 165.4627ms
+2026/09/06 12:38:19 [DESKTOP-E8PN8I3/lK4alvOZtQ-000324] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61935 - 200 544B in 74.6863ms
+2026/09/06 12:38:20 [DESKTOP-E8PN8I3/lK4alvOZtQ-000325] "GET http://localhost:8080/api/v1/night-audit/latest HTTP/1.1" from [::1]:61939 - 404 19B in 0s
+2026/09/06 12:38:20 [DESKTOP-E8PN8I3/lK4alvOZtQ-000326] "GET http://localhost:8080/api/v1/night-audit/latest HTTP/1.1" from [::1]:61940 - 404 19B in 0s
+2026/09/06 12:38:23 [DESKTOP-E8PN8I3/lK4alvOZtQ-000327] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61945 - 200 819B in 110.1942ms
+2026/09/06 12:38:25 [DESKTOP-E8PN8I3/lK4alvOZtQ-000328] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61960 - 200 544B in 3.5613ms
+2026/09/06 12:38:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000329] "GET http://localhost:8080/api/v1/revenue/dashboard HTTP/1.1" from [::1]:61962 - 200 2025B in 13.1732ms
+2026/09/06 12:38:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000330] "GET http://localhost:8080/api/v1/revenue/dashboard HTTP/1.1" from [::1]:61963 - 200 2025B in 6.7177ms
+2026/09/06 12:38:29 [DESKTOP-E8PN8I3/lK4alvOZtQ-000331] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61965 - 200 819B in 132.0452ms
+2026/09/06 12:38:30 [DESKTOP-E8PN8I3/lK4alvOZtQ-000332] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:61980 - 200 544B in 1.561ms
+2026/09/06 12:38:31 [DESKTOP-E8PN8I3/lK4alvOZtQ-000333] "GET http://localhost:8080/api/v1/rates HTTP/1.1" from [::1]:61984 - 404 19B in 0s
+2026/09/06 12:38:31 [DESKTOP-E8PN8I3/lK4alvOZtQ-000334] "GET http://localhost:8080/api/v1/revenue/pricing-rules HTTP/1.1" from [::1]:61985 - 200 1050B in 2.0344ms
+2026/09/06 12:38:31 [DESKTOP-E8PN8I3/lK4alvOZtQ-000335] "GET http://localhost:8080/api/v1/rates HTTP/1.1" from [::1]:61986 - 404 19B in 0s
+2026/09/06 12:38:31 [DESKTOP-E8PN8I3/lK4alvOZtQ-000336] "GET http://localhost:8080/api/v1/revenue/pricing-rules HTTP/1.1" from [::1]:61987 - 200 1050B in 1.4983ms
+2026/09/06 12:38:34 [DESKTOP-E8PN8I3/lK4alvOZtQ-000337] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:61992 - 200 819B in 115.4292ms
+2026/09/06 12:38:36 [DESKTOP-E8PN8I3/lK4alvOZtQ-000338] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62007 - 200 544B in 1.5603ms
+2026/09/06 12:38:37 [DESKTOP-E8PN8I3/lK4alvOZtQ-000339] "GET http://localhost:8080/api/v1/loyalty/tiers HTTP/1.1" from [::1]:62009 - 200 1000B in 506.8µs
+2026/09/06 12:38:37 [DESKTOP-E8PN8I3/lK4alvOZtQ-000340] "GET http://localhost:8080/api/v1/loyalty/tiers HTTP/1.1" from [::1]:62010 - 200 1000B in 699.1µs
+2026/09/06 12:38:40 [DESKTOP-E8PN8I3/lK4alvOZtQ-000341] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62012 - 200 819B in 132.2895ms
+2026/09/06 12:38:41 [DESKTOP-E8PN8I3/lK4alvOZtQ-000342] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62024 - 200 544B in 2.0891ms
+2026/09/06 12:38:42 [DESKTOP-E8PN8I3/lK4alvOZtQ-000344] "GET http://localhost:8080/api/v1/crm/guests?q= HTTP/1.1" from [::1]:62027 - 400 183B in 2.5094ms
+2026/09/06 12:38:42 [DESKTOP-E8PN8I3/lK4alvOZtQ-000343] "GET http://localhost:8080/api/v1/crm/feedback HTTP/1.1" from [::1]:62028 - 500 187B in 4.3717ms
+2026/09/06 12:38:42 [DESKTOP-E8PN8I3/lK4alvOZtQ-000345] "GET http://localhost:8080/api/v1/crm/feedback HTTP/1.1" from [::1]:62030 - 500 187B in 0s
+2026/09/06 12:38:42 [DESKTOP-E8PN8I3/lK4alvOZtQ-000346] "GET http://localhost:8080/api/v1/crm/guests?q= HTTP/1.1" from [::1]:62029 - 400 183B in 0s
+2026/09/06 12:38:45 [DESKTOP-E8PN8I3/lK4alvOZtQ-000347] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62032 - 200 819B in 130.5662ms
+2026/09/06 12:38:47 [DESKTOP-E8PN8I3/lK4alvOZtQ-000348] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62047 - 200 544B in 1.5547ms
+2026/09/06 12:38:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000349] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62079 - 200 819B in 175.121ms
+2026/09/06 12:38:57 [DESKTOP-E8PN8I3/lK4alvOZtQ-000350] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62089 - 200 544B in 1.8827ms
+2026/09/06 12:38:58 [DESKTOP-E8PN8I3/lK4alvOZtQ-000351] "GET http://localhost:8080/api/v1/payments/ HTTP/1.1" from [::1]:62093 - 404 19B in 967.4µs
+2026/09/06 12:38:58 [DESKTOP-E8PN8I3/lK4alvOZtQ-000354] "GET http://localhost:8080/api/v1/payments/ HTTP/1.1" from [::1]:62096 - 404 19B in 0s
+2026/09/06 12:38:58 [DESKTOP-E8PN8I3/lK4alvOZtQ-000352] "GET http://localhost:8080/api/v1/workflow/approvals HTTP/1.1" from [::1]:62094 - 500 189B in 2.9721ms
+2026/09/06 12:38:58 [DESKTOP-E8PN8I3/lK4alvOZtQ-000355] "GET http://localhost:8080/api/v1/workflow/approvals HTTP/1.1" from [::1]:62097 - 500 189B in 507.1µs
+2026/09/06 12:38:58 [DESKTOP-E8PN8I3/lK4alvOZtQ-000353] "GET http://localhost:8080/api/v1/notifications/ HTTP/1.1" from [::1]:62095 - 200 170B in 6.6524ms
+2026/09/06 12:38:58 [DESKTOP-E8PN8I3/lK4alvOZtQ-000356] "GET http://localhost:8080/api/v1/notifications/ HTTP/1.1" from [::1]:62099 - 200 170B in 0s
+2026/09/06 12:39:02 [DESKTOP-E8PN8I3/lK4alvOZtQ-000357] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62101 - 200 819B in 1.0091988s
+2026/09/06 12:39:04 [DESKTOP-E8PN8I3/lK4alvOZtQ-000358] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62117 - 200 544B in 4.053ms
+2026/09/06 12:39:07 [DESKTOP-E8PN8I3/lK4alvOZtQ-000359] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62142 - 200 819B in 118.4018ms
+2026/09/06 12:39:07 [DESKTOP-E8PN8I3/lK4alvOZtQ-000360] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62147 - 200 544B in 1.5557ms
+2026/09/06 12:39:09 [DESKTOP-E8PN8I3/lK4alvOZtQ-000361] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62164 - 200 819B in 153.316ms
+2026/09/06 12:39:10 [DESKTOP-E8PN8I3/lK4alvOZtQ-000362] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62177 - 401 179B in 0s
+2026/09/06 12:39:11 [DESKTOP-E8PN8I3/lK4alvOZtQ-000363] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62185 - 200 544B in 4.4569ms
+2026/09/06 12:39:12 [DESKTOP-E8PN8I3/lK4alvOZtQ-000364] "GET http://localhost:8080/api/v1/front-desk/chart?start=2026-09-07&end=2026-09-13 HTTP/1.1" from [::1]:62187 - 200 16855B in 10.3384ms
+2026/09/06 12:39:12 [DESKTOP-E8PN8I3/lK4alvOZtQ-000365] "GET http://localhost:8080/api/v1/front-desk/chart?start=2026-09-07&end=2026-09-13 HTTP/1.1" from [::1]:62188 - 200 16855B in 4.8657ms
+2026/09/06 12:39:13 [DESKTOP-E8PN8I3/lK4alvOZtQ-000366] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62192 - 200 819B in 117.7114ms
+2026/09/06 12:39:15 [DESKTOP-E8PN8I3/lK4alvOZtQ-000367] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62202 - 200 544B in 2.0494ms
+2026/09/06 12:39:15 [DESKTOP-E8PN8I3/lK4alvOZtQ-000368] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62204 - 200 819B in 136.3119ms
+2026/09/06 12:39:16 [DESKTOP-E8PN8I3/lK4alvOZtQ-000369] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62192 - 200 819B in 179.8794ms
+2026/09/06 12:39:18 [DESKTOP-E8PN8I3/lK4alvOZtQ-000370] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62228 - 200 544B in 7.2931ms
+2026/09/06 12:39:19 [DESKTOP-E8PN8I3/lK4alvOZtQ-000371] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62238 - 200 544B in 1.9997ms
+2026/09/06 12:39:19 [DESKTOP-E8PN8I3/lK4alvOZtQ-000372] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62204 - 200 819B in 131.3213ms
+2026/09/06 12:39:20 [DESKTOP-E8PN8I3/lK4alvOZtQ-000373] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62248 - 200 544B in 2.6881ms
+2026/09/06 12:39:20 [DESKTOP-E8PN8I3/lK4alvOZtQ-000375] "GET http://localhost:8080/api/v1/reservations?status=confirmed HTTP/1.1" from [::1]:62250 - 500 197B in 0s
+2026/09/06 12:39:20 [DESKTOP-E8PN8I3/lK4alvOZtQ-000376] "GET http://localhost:8080/api/v1/reservations?status=checked_in HTTP/1.1" from [::1]:62251 - 500 197B in 1.9183ms
+2026/09/06 12:39:20 [DESKTOP-E8PN8I3/lK4alvOZtQ-000374] "GET http://localhost:8080/api/v1/rooms?per_page=200 HTTP/1.1" from [::1]:62249 - 200 11083B in 33.2399ms
+2026/09/06 12:39:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000378] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62256 - 200 544B in 1.5352ms
+2026/09/06 12:39:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000377] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62255 - 200 819B in 129.2429ms
+2026/09/06 12:39:22 [DESKTOP-E8PN8I3/lK4alvOZtQ-000379] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62266 - 200 544B in 8.2886ms
+2026/09/06 12:39:24 [DESKTOP-E8PN8I3/lK4alvOZtQ-000383] "GET http://localhost:8080/api/v1/reservations?status=confirmed HTTP/1.1" from [::1]:62276 - 500 197B in 3.8264ms
+2026/09/06 12:39:24 [DESKTOP-E8PN8I3/lK4alvOZtQ-000381] "GET http://localhost:8080/api/v1/rooms?per_page=200 HTTP/1.1" from [::1]:62274 - 200 11083B in 8.4289ms
+2026/09/06 12:39:24 [DESKTOP-E8PN8I3/lK4alvOZtQ-000382] "GET http://localhost:8080/api/v1/reservations?status=checked_in HTTP/1.1" from [::1]:62275 - 500 197B in 7.8844ms
+2026/09/06 12:39:24 [DESKTOP-E8PN8I3/lK4alvOZtQ-000380] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62273 - 200 544B in 10.4332ms
+2026/09/06 12:39:24 [DESKTOP-E8PN8I3/lK4alvOZtQ-000384] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62277 - 200 544B in 1.05ms
+2026/09/06 12:39:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000387] "GET http://localhost:8080/api/v1/reservations?status=confirmed HTTP/1.1" from [::1]:62281 - 500 197B in 798µs
+2026/09/06 12:39:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000388] "GET http://localhost:8080/api/v1/reservations?status=checked_in HTTP/1.1" from [::1]:62282 - 500 197B in 2.5556ms
+2026/09/06 12:39:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000385] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62279 - 200 544B in 5.3567ms
+2026/09/06 12:39:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000386] "GET http://localhost:8080/api/v1/rooms?per_page=200 HTTP/1.1" from [::1]:62280 - 200 11083B in 5.3567ms
+2026/09/06 12:39:28 [DESKTOP-E8PN8I3/lK4alvOZtQ-000389] "GET http://localhost:8080/api/v1/reservations?status=checked_in HTTP/1.1" from [::1]:62286 - 500 197B in 963.1µs
+2026/09/06 12:39:28 [DESKTOP-E8PN8I3/lK4alvOZtQ-000390] "GET http://localhost:8080/api/v1/reservations?status=confirmed HTTP/1.1" from [::1]:62285 - 500 197B in 5.8342ms
+2026/09/06 12:39:31 [DESKTOP-E8PN8I3/lK4alvOZtQ-000391] "GET http://localhost:8080/api/v1/reservations?page=1&per_page=20 HTTP/1.1" from [::1]:62291 - 500 197B in 870.6µs
+2026/09/06 12:39:32 [DESKTOP-E8PN8I3/lK4alvOZtQ-000392] "GET http://localhost:8080/api/v1/rooms?per_page=200 HTTP/1.1" from [::1]:62300 - 200 11083B in 354.3666ms
+2026/09/06 12:39:33 [DESKTOP-E8PN8I3/lK4alvOZtQ-000393] "GET http://localhost:8080/api/v1/guests?search=&page=1&per_page=20 HTTP/1.1" from [::1]:62304 - 200 370B in 1.1913ms
+2026/09/06 12:39:34 [DESKTOP-E8PN8I3/lK4alvOZtQ-000395] "GET http://localhost:8080/api/v1/reservations?status=checked_in HTTP/1.1" from [::1]:62308 - 500 197B in 208.3µs
+2026/09/06 12:39:34 [DESKTOP-E8PN8I3/lK4alvOZtQ-000394] "GET http://localhost:8080/api/v1/reservations?status=confirmed HTTP/1.1" from [::1]:62307 - 500 197B in 1.2234ms
+2026/09/06 12:39:35 [DESKTOP-E8PN8I3/lK4alvOZtQ-000396] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62312 - 200 819B in 93.9725ms
+2026/09/06 12:39:36 [DESKTOP-E8PN8I3/lK4alvOZtQ-000397] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:62320 - 200 429B in 507.7µs
+2026/09/06 12:39:36 [DESKTOP-E8PN8I3/lK4alvOZtQ-000398] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62323 - 200 544B in 19.406ms
+2026/09/06 12:39:37 [DESKTOP-E8PN8I3/lK4alvOZtQ-000399] "GET http://localhost:8080/api/v1/finance/accounts/classes HTTP/1.1" from [::1]:62326 - 200 366B in 996.5µs
+2026/09/06 12:39:37 [DESKTOP-E8PN8I3/lK4alvOZtQ-000400] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:62327 - 200 168B in 3.054ms
+2026/09/06 12:39:37 [DESKTOP-E8PN8I3/lK4alvOZtQ-000402] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:62329 - 200 168B in 0s
+2026/09/06 12:39:37 [DESKTOP-E8PN8I3/lK4alvOZtQ-000401] "GET http://localhost:8080/api/v1/finance/accounts/classes HTTP/1.1" from [::1]:62328 - 200 366B in 72.0859ms
+2026/09/06 12:39:37 [DESKTOP-E8PN8I3/lK4alvOZtQ-000403] "GET http://localhost:8080/api/v1/reservations?page=1&per_page=20 HTTP/1.1" from [::1]:62331 - 500 197B in 0s
+2026/09/06 12:39:38 [DESKTOP-E8PN8I3/lK4alvOZtQ-000404] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:62338 - 200 5178B in 507.4µs
+2026/09/06 12:39:38 [DESKTOP-E8PN8I3/lK4alvOZtQ-000405] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:62339 - 200 5178B in 507.1µs
+2026/09/06 12:39:39 [DESKTOP-E8PN8I3/lK4alvOZtQ-000406] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62312 - 200 819B in 276.5309ms
+
+ panic: interface conversion: interface {} is nil, not string
+ 
+ -> infineon/internal/server/handler.(*Handler).GetDashboard
+ ->   C:/Users/LENOVO/Documents/Special Project/internal/server/handler/reports.go:67
+
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.DemoPropertyID.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/demo.go:13
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.Auth.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/auth.go:32
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/chain.go:31
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/cors.(*Cors).Handler.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/cors@v1.2.1/cors.go:228
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.CorrelationID.func1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/correlation.go:23
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.Recoverer.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/recoverer.go:45
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestLogger.func1.1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/logger.go:55
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RealIP.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/realip.go:36
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestID.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/request_id.go:76
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:90
+    net/http.serverHandler.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:3413
+    net/http.(*conn).serve
+      C:/Program Files/Go/src/net/http/server.go:2137
+    created by net/http.(*Server).Serve in goroutine 1
+      C:/Program Files/Go/src/net/http/server.go:3581
+    
+2026/09/06 12:39:39 [DESKTOP-E8PN8I3/lK4alvOZtQ-000407] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:62351 - 500 0B in 1.9831ms
+
+ panic: interface conversion: interface {} is nil, not string
+ 
+ -> infineon/internal/server/handler.(*Handler).GetDashboard
+ ->   C:/Users/LENOVO/Documents/Special Project/internal/server/handler/reports.go:67
+
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.DemoPropertyID.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/demo.go:13
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.Auth.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/auth.go:32
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/chain.go:31
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/cors.(*Cors).Handler.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/cors@v1.2.1/cors.go:228
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.CorrelationID.func1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/correlation.go:23
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.Recoverer.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/recoverer.go:45
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestLogger.func1.1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/logger.go:55
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RealIP.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/realip.go:36
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestID.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/request_id.go:76
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:90
+    net/http.serverHandler.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:3413
+    net/http.(*conn).serve
+      C:/Program Files/Go/src/net/http/server.go:2137
+    created by net/http.(*Server).Serve in goroutine 1
+      C:/Program Files/Go/src/net/http/server.go:3581
+    
+2026/09/06 12:39:39 [DESKTOP-E8PN8I3/lK4alvOZtQ-000408] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:62352 - 500 0B in 2.0399ms
+2026/09/06 12:39:40 [DESKTOP-E8PN8I3/lK4alvOZtQ-000409] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62360 - 200 544B in 1.4895ms
+2026/09/06 12:39:40 [DESKTOP-E8PN8I3/lK4alvOZtQ-000410] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:62361 - 200 4354B in 1.628ms
+2026/09/06 12:39:40 [DESKTOP-E8PN8I3/lK4alvOZtQ-000411] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:62362 - 200 4354B in 35.0997ms
+2026/09/06 12:39:41 [DESKTOP-E8PN8I3/lK4alvOZtQ-000412] "GET http://localhost:8080/api/v1/reservations?page=1&per_page=20 HTTP/1.1" from [::1]:62365 - 500 197B in 6.2063ms
+2026/09/06 12:39:41 [DESKTOP-E8PN8I3/lK4alvOZtQ-000413] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62367 - 401 179B in 113.7842ms
+2026/09/06 12:39:42 [DESKTOP-E8PN8I3/lK4alvOZtQ-000414] "GET http://localhost:8080/api/v1/reservations?page=1&per_page=20 HTTP/1.1" from [::1]:62375 - 500 197B in 703.8µs
+2026/09/06 12:39:45 [DESKTOP-E8PN8I3/lK4alvOZtQ-000415] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62367 - 200 819B in 853.0144ms
+2026/09/06 12:39:46 [DESKTOP-E8PN8I3/lK4alvOZtQ-000417] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62412 - 200 544B in 1.5107ms
+2026/09/06 12:39:47 [DESKTOP-E8PN8I3/lK4alvOZtQ-000416] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62410 - 200 819B in 176.4114ms
+2026/09/06 12:39:47 [DESKTOP-E8PN8I3/lK4alvOZtQ-000418] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:62423 - 200 213B in 1.0033ms
+2026/09/06 12:39:47 [DESKTOP-E8PN8I3/lK4alvOZtQ-000419] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62423 - 401 59B in 0s
+2026/09/06 12:39:47 [DESKTOP-E8PN8I3/lK4alvOZtQ-000420] "GET http://localhost:8080/favicon.ico HTTP/1.1" from [::1]:62423 - 404 19B in 0s
+2026/09/06 12:39:47 [DESKTOP-E8PN8I3/lK4alvOZtQ-000421] "GET http://localhost:8080/api/v1/rooms?per_page=10 HTTP/1.1" from [::1]:62423 - 401 59B in 0s
+2026/09/06 12:39:47 [DESKTOP-E8PN8I3/lK4alvOZtQ-000422] "GET http://localhost:8080/api/v1/reservations HTTP/1.1" from [::1]:62423 - 401 59B in 0s
+2026/09/06 12:39:47 [DESKTOP-E8PN8I3/lK4alvOZtQ-000423] "GET http://localhost:8080/api/v1/guests HTTP/1.1" from [::1]:62423 - 401 59B in 0s
+2026/09/06 12:39:47 [DESKTOP-E8PN8I3/lK4alvOZtQ-000424] "GET http://localhost:8080/api/v1/channels HTTP/1.1" from [::1]:62423 - 401 59B in 0s
+2026/09/06 12:39:47 [DESKTOP-E8PN8I3/lK4alvOZtQ-000425] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:62423 - 401 59B in 0s
+2026/09/06 12:39:48 [DESKTOP-E8PN8I3/lK4alvOZtQ-000426] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:62423 - 401 59B in 0s
+2026/09/06 12:39:48 [DESKTOP-E8PN8I3/lK4alvOZtQ-000427] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:62423 - 401 59B in 0s
+2026/09/06 12:39:48 [DESKTOP-E8PN8I3/lK4alvOZtQ-000428] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:62423 - 401 59B in 0s
+2026/09/06 12:39:48 [DESKTOP-E8PN8I3/lK4alvOZtQ-000429] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:62423 - 401 59B in 0s
+2026/09/06 12:39:48 [DESKTOP-E8PN8I3/lK4alvOZtQ-000430] "GET http://localhost:8080/api/v1/inventory/products HTTP/1.1" from [::1]:62423 - 401 59B in 0s
+2026/09/06 12:39:48 [DESKTOP-E8PN8I3/lK4alvOZtQ-000431] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62428 - 200 544B in 1.6127ms
+2026/09/06 12:39:49 [DESKTOP-E8PN8I3/lK4alvOZtQ-000432] "GET http://localhost:8080/api/v1/rooms?per_page=200 HTTP/1.1" from [::1]:62431 - 200 11083B in 1.0408ms
+2026/09/06 12:39:52 [DESKTOP-E8PN8I3/lK4alvOZtQ-000433] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62436 - 200 819B in 112.1446ms
+2026/09/06 12:39:54 [DESKTOP-E8PN8I3/lK4alvOZtQ-000434] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62450 - 200 544B in 387.0334ms
+2026/09/06 12:39:55 [DESKTOP-E8PN8I3/lK4alvOZtQ-000435] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:62453 - 200 429B in 507.2µs
+2026/09/06 12:39:58 [DESKTOP-E8PN8I3/lK4alvOZtQ-000436] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62456 - 200 819B in 112.2553ms
+2026/09/06 12:40:00 [DESKTOP-E8PN8I3/lK4alvOZtQ-000437] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62470 - 200 544B in 1.558ms
+2026/09/06 12:40:00 [DESKTOP-E8PN8I3/lK4alvOZtQ-000438] "GET http://localhost:8080/api/v1/inventory/products?search=&per_page=50 HTTP/1.1" from [::1]:62473 - 200 4113B in 1.8092ms
+2026/09/06 12:40:04 [DESKTOP-E8PN8I3/lK4alvOZtQ-000439] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62475 - 200 819B in 153.3224ms
+2026/09/06 12:40:05 [DESKTOP-E8PN8I3/lK4alvOZtQ-000440] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62488 - 200 544B in 1.0621ms
+2026/09/06 12:40:06 [DESKTOP-E8PN8I3/lK4alvOZtQ-000441] "GET http://localhost:8080/api/v1/rooms?per_page=200 HTTP/1.1" from [::1]:62492 - 200 11083B in 5.2646ms
+2026/09/06 12:40:09 [DESKTOP-E8PN8I3/lK4alvOZtQ-000442] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62495 - 200 819B in 115.9145ms
+2026/09/06 12:40:10 [DESKTOP-E8PN8I3/lK4alvOZtQ-000443] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62508 - 200 544B in 2.1194ms
+2026/09/06 12:40:11 [DESKTOP-E8PN8I3/lK4alvOZtQ-000444] "GET http://localhost:8080/api/v1/finance/accounts/classes HTTP/1.1" from [::1]:62510 - 200 366B in 505.3µs
+2026/09/06 12:40:11 [DESKTOP-E8PN8I3/lK4alvOZtQ-000445] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:62511 - 200 168B in 8.5658ms
+2026/09/06 12:40:11 [DESKTOP-E8PN8I3/lK4alvOZtQ-000446] "GET http://localhost:8080/api/v1/finance/accounts/classes HTTP/1.1" from [::1]:62512 - 200 366B in 630µs
+2026/09/06 12:40:11 [DESKTOP-E8PN8I3/lK4alvOZtQ-000447] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:62513 - 200 168B in 602.8µs
+2026/09/06 12:40:14 [DESKTOP-E8PN8I3/lK4alvOZtQ-000448] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62517 - 200 819B in 107.6432ms
+2026/09/06 12:40:16 [DESKTOP-E8PN8I3/lK4alvOZtQ-000449] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62533 - 200 544B in 1.5615ms
+2026/09/06 12:40:17 [DESKTOP-E8PN8I3/lK4alvOZtQ-000450] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:62538 - 200 4354B in 11.4707ms
+2026/09/06 12:40:17 [DESKTOP-E8PN8I3/lK4alvOZtQ-000451] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:62539 - 200 4354B in 3.1747ms
+2026/09/06 12:40:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000452] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62544 - 200 819B in 134.0139ms
+2026/09/06 12:40:22 [DESKTOP-E8PN8I3/lK4alvOZtQ-000453] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62553 - 200 544B in 2.462ms
+2026/09/06 12:40:23 [DESKTOP-E8PN8I3/lK4alvOZtQ-000454] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:62555 - 200 4354B in 2.1765ms
+2026/09/06 12:40:23 [DESKTOP-E8PN8I3/lK4alvOZtQ-000455] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:62557 - 200 4354B in 2.3487ms
+2026/09/06 12:40:26 [CHANNEL] Starting rate sync for property 00000000-0000-0000-0000-000000000001
+2026/09/06 12:40:26 [CHANNEL] Rate sync complete: 0 synced, 0 failed
+2026/09/06 12:40:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000456] "POST http://localhost:8080/api/v1/channels/sync-rates HTTP/1.1" from [::1]:62561 - 200 125B in 10.7191ms
+2026/09/06 12:40:26 [DESKTOP-E8PN8I3/lK4alvOZtQ-000457] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:62562 - 200 4354B in 3.4633ms
+2026/09/06 12:40:28 [DESKTOP-E8PN8I3/lK4alvOZtQ-000458] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62565 - 200 819B in 124.2021ms
+2026/09/06 12:40:30 [DESKTOP-E8PN8I3/lK4alvOZtQ-000459] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62578 - 200 544B in 2.1995ms
+2026/09/06 12:40:31 [DESKTOP-E8PN8I3/lK4alvOZtQ-000460] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:62580 - 200 5178B in 681.6µs
+2026/09/06 12:40:31 [DESKTOP-E8PN8I3/lK4alvOZtQ-000461] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:62581 - 200 5178B in 1.1505ms
+2026/09/06 12:40:34 [DESKTOP-E8PN8I3/lK4alvOZtQ-000462] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62582 - 200 819B in 123.3873ms
+2026/09/06 12:40:35 [DESKTOP-E8PN8I3/lK4alvOZtQ-000463] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62596 - 200 544B in 1.5699ms
+
+ panic: interface conversion: interface {} is nil, not string
+ 
+ -> infineon/internal/server/handler.(*Handler).GetDashboard
+ ->   C:/Users/LENOVO/Documents/Special Project/internal/server/handler/reports.go:67
+
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.DemoPropertyID.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/demo.go:13
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.Auth.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/auth.go:32
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/chain.go:31
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/cors.(*Cors).Handler.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/cors@v1.2.1/cors.go:228
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.CorrelationID.func1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/correlation.go:23
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.Recoverer.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/recoverer.go:45
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestLogger.func1.1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/logger.go:55
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RealIP.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/realip.go:36
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestID.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/request_id.go:76
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:90
+    net/http.serverHandler.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:3413
+    net/http.(*conn).serve
+      C:/Program Files/Go/src/net/http/server.go:2137
+    created by net/http.(*Server).Serve in goroutine 1
+      C:/Program Files/Go/src/net/http/server.go:3581
+    
+2026/09/06 12:40:36 [DESKTOP-E8PN8I3/lK4alvOZtQ-000464] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:62599 - 500 0B in 1.6994ms
+
+ panic: interface conversion: interface {} is nil, not string
+ 
+ -> infineon/internal/server/handler.(*Handler).GetDashboard
+ ->   C:/Users/LENOVO/Documents/Special Project/internal/server/handler/reports.go:67
+
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.DemoPropertyID.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/demo.go:13
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.Auth.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/auth.go:32
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/chain.go:31
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/cors.(*Cors).Handler.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/cors@v1.2.1/cors.go:228
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.CorrelationID.func1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/correlation.go:23
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.Recoverer.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/recoverer.go:45
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestLogger.func1.1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/logger.go:55
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RealIP.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/realip.go:36
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestID.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/request_id.go:76
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:90
+    net/http.serverHandler.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:3413
+    net/http.(*conn).serve
+      C:/Program Files/Go/src/net/http/server.go:2137
+    created by net/http.(*Server).Serve in goroutine 1
+      C:/Program Files/Go/src/net/http/server.go:3581
+    
+2026/09/06 12:40:36 [DESKTOP-E8PN8I3/lK4alvOZtQ-000465] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:62600 - 500 0B in 1.7899ms
+2026/09/06 12:40:40 [DESKTOP-E8PN8I3/lK4alvOZtQ-000466] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62601 - 200 819B in 123.8055ms
+2026/09/06 12:40:42 [DESKTOP-E8PN8I3/lK4alvOZtQ-000467] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62613 - 200 544B in 2.0084ms
+2026/09/06 12:40:43 [DESKTOP-E8PN8I3/lK4alvOZtQ-000468] "GET http://localhost:8080/api/v1/night-audit/latest HTTP/1.1" from [::1]:62617 - 404 19B in 0s
+2026/09/06 12:40:43 [DESKTOP-E8PN8I3/lK4alvOZtQ-000469] "GET http://localhost:8080/api/v1/night-audit/latest HTTP/1.1" from [::1]:62618 - 404 19B in 0s
+2026/09/06 12:40:46 [DESKTOP-E8PN8I3/lK4alvOZtQ-000470] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62620 - 200 819B in 173.368ms
+2026/09/06 12:40:47 [DESKTOP-E8PN8I3/lK4alvOZtQ-000471] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62633 - 200 544B in 1.556ms
+2026/09/06 12:40:48 [DESKTOP-E8PN8I3/lK4alvOZtQ-000472] "GET http://localhost:8080/api/v1/revenue/dashboard HTTP/1.1" from [::1]:62637 - 200 2025B in 2.7783ms
+2026/09/06 12:40:48 [DESKTOP-E8PN8I3/lK4alvOZtQ-000473] "GET http://localhost:8080/api/v1/revenue/dashboard HTTP/1.1" from [::1]:62638 - 200 2025B in 7.3955ms
+2026/09/06 12:40:52 [DESKTOP-E8PN8I3/lK4alvOZtQ-000474] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62640 - 200 819B in 100.0798ms
+2026/09/06 12:40:53 [DESKTOP-E8PN8I3/lK4alvOZtQ-000475] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62654 - 200 544B in 17.1098ms
+2026/09/06 12:40:54 [DESKTOP-E8PN8I3/lK4alvOZtQ-000476] "GET http://localhost:8080/api/v1/rates HTTP/1.1" from [::1]:62661 - 404 19B in 0s
+2026/09/06 12:40:54 [DESKTOP-E8PN8I3/lK4alvOZtQ-000477] "GET http://localhost:8080/api/v1/revenue/pricing-rules HTTP/1.1" from [::1]:62662 - 200 1050B in 508.3µs
+2026/09/06 12:40:54 [DESKTOP-E8PN8I3/lK4alvOZtQ-000478] "GET http://localhost:8080/api/v1/rates HTTP/1.1" from [::1]:62663 - 404 19B in 0s
+2026/09/06 12:40:54 [DESKTOP-E8PN8I3/lK4alvOZtQ-000479] "GET http://localhost:8080/api/v1/revenue/pricing-rules HTTP/1.1" from [::1]:62664 - 200 1050B in 505.8µs
+2026/09/06 12:40:57 [DESKTOP-E8PN8I3/lK4alvOZtQ-000480] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62668 - 200 819B in 127.6566ms
+2026/09/06 12:40:59 [DESKTOP-E8PN8I3/lK4alvOZtQ-000481] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62678 - 200 544B in 1.5719ms
+2026/09/06 12:40:59 [DESKTOP-E8PN8I3/lK4alvOZtQ-000482] "GET http://localhost:8080/api/v1/loyalty/tiers HTTP/1.1" from [::1]:62680 - 200 1000B in 508.3µs
+2026/09/06 12:40:59 [DESKTOP-E8PN8I3/lK4alvOZtQ-000483] "GET http://localhost:8080/api/v1/loyalty/tiers HTTP/1.1" from [::1]:62681 - 200 1000B in 627.4µs
+2026/09/06 12:41:03 [DESKTOP-E8PN8I3/lK4alvOZtQ-000484] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62683 - 200 819B in 227.1655ms
+2026/09/06 12:41:04 [DESKTOP-E8PN8I3/lK4alvOZtQ-000485] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62694 - 200 544B in 1.729ms
+2026/09/06 12:41:05 [DESKTOP-E8PN8I3/lK4alvOZtQ-000486] "GET http://localhost:8080/api/v1/crm/guests?q= HTTP/1.1" from [::1]:62699 - 400 183B in 0s
+2026/09/06 12:41:05 [DESKTOP-E8PN8I3/lK4alvOZtQ-000487] "GET http://localhost:8080/api/v1/crm/feedback HTTP/1.1" from [::1]:62700 - 500 187B in 1.0555ms
+2026/09/06 12:41:05 [DESKTOP-E8PN8I3/lK4alvOZtQ-000488] "GET http://localhost:8080/api/v1/crm/guests?q= HTTP/1.1" from [::1]:62701 - 400 183B in 102.3µs
+2026/09/06 12:41:05 [DESKTOP-E8PN8I3/lK4alvOZtQ-000489] "GET http://localhost:8080/api/v1/crm/feedback HTTP/1.1" from [::1]:62702 - 500 187B in 0s
+2026/09/06 12:41:08 [DESKTOP-E8PN8I3/lK4alvOZtQ-000490] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62704 - 200 819B in 113.5394ms
+2026/09/06 12:41:09 [DESKTOP-E8PN8I3/lK4alvOZtQ-000491] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62714 - 200 544B in 1.558ms
+2026/09/06 12:41:18 [DESKTOP-E8PN8I3/lK4alvOZtQ-000492] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62738 - 200 819B in 139.6773ms
+2026/09/06 12:41:20 [DESKTOP-E8PN8I3/lK4alvOZtQ-000493] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62748 - 200 544B in 2.0907ms
+2026/09/06 12:41:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000494] "GET http://localhost:8080/api/v1/payments/ HTTP/1.1" from [::1]:62752 - 404 19B in 0s
+2026/09/06 12:41:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000495] "GET http://localhost:8080/api/v1/workflow/approvals HTTP/1.1" from [::1]:62753 - 500 189B in 508.5µs
+2026/09/06 12:41:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000496] "GET http://localhost:8080/api/v1/notifications/ HTTP/1.1" from [::1]:62754 - 200 170B in 4.8215ms
+2026/09/06 12:41:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000497] "GET http://localhost:8080/api/v1/payments/ HTTP/1.1" from [::1]:62755 - 404 19B in 0s
+2026/09/06 12:41:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000498] "GET http://localhost:8080/api/v1/workflow/approvals HTTP/1.1" from [::1]:62757 - 500 189B in 1.1365ms
+2026/09/06 12:41:21 [DESKTOP-E8PN8I3/lK4alvOZtQ-000499] "GET http://localhost:8080/api/v1/notifications/ HTTP/1.1" from [::1]:62758 - 200 170B in 509.8µs
+2026/09/06 12:41:24 [DESKTOP-E8PN8I3/lK4alvOZtQ-000500] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62761 - 200 819B in 103.3234ms
+2026/09/06 12:41:25 [DESKTOP-E8PN8I3/lK4alvOZtQ-000501] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62773 - 200 544B in 1.6438ms
+2026/09/06 12:41:29 [DESKTOP-E8PN8I3/lK4alvOZtQ-000502] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62779 - 200 819B in 125.9962ms
+2026/09/06 12:41:31 [DESKTOP-E8PN8I3/lK4alvOZtQ-000503] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62791 - 200 544B in 1.5958ms
+2026/09/06 12:41:31 [DESKTOP-E8PN8I3/lK4alvOZtQ-000504] "GET http://localhost:8080/api/v1/front-desk/chart?start=2026-09-07&end=2026-09-13 HTTP/1.1" from [::1]:62794 - 200 16855B in 2.8912ms
+2026/09/06 12:41:31 [DESKTOP-E8PN8I3/lK4alvOZtQ-000505] "GET http://localhost:8080/api/v1/front-desk/chart?start=2026-09-07&end=2026-09-13 HTTP/1.1" from [::1]:62795 - 200 16855B in 7.4057ms
+2026/09/06 12:41:35 [DESKTOP-E8PN8I3/lK4alvOZtQ-000506] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62797 - 200 819B in 124.1462ms
+2026/09/06 12:41:36 [DESKTOP-E8PN8I3/lK4alvOZtQ-000507] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62808 - 200 544B in 1.8997ms
+2026/09/06 12:41:38 [DESKTOP-E8PN8I3/lK4alvOZtQ-000508] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62797 - 200 819B in 101.0917ms
+2026/09/06 12:41:39 [DESKTOP-E8PN8I3/lK4alvOZtQ-000509] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62820 - 200 544B in 3.5672ms
+2026/09/06 12:41:40 [DESKTOP-E8PN8I3/lK4alvOZtQ-000510] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62823 - 200 544B in 1.3044ms
+2026/09/06 12:41:41 [DESKTOP-E8PN8I3/lK4alvOZtQ-000513] "GET http://localhost:8080/api/v1/reservations?status=confirmed HTTP/1.1" from [::1]:62827 - 500 197B in 559.8µs
+2026/09/06 12:41:41 [DESKTOP-E8PN8I3/lK4alvOZtQ-000514] "GET http://localhost:8080/api/v1/reservations?status=checked_in HTTP/1.1" from [::1]:62828 - 500 197B in 1.0331ms
+2026/09/06 12:41:41 [DESKTOP-E8PN8I3/lK4alvOZtQ-000512] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62826 - 200 544B in 3.6449ms
+2026/09/06 12:41:41 [DESKTOP-E8PN8I3/lK4alvOZtQ-000511] "GET http://localhost:8080/api/v1/rooms?per_page=200 HTTP/1.1" from [::1]:62825 - 200 11083B in 8.8256ms
+2026/09/06 12:41:42 [DESKTOP-E8PN8I3/lK4alvOZtQ-000515] "GET http://localhost:8080/api/v1/reservations?page=1&per_page=20 HTTP/1.1" from [::1]:62833 - 500 197B in 672µs
+2026/09/06 12:41:43 [DESKTOP-E8PN8I3/lK4alvOZtQ-000516] "GET http://localhost:8080/api/v1/rooms?per_page=200 HTTP/1.1" from [::1]:62837 - 200 11083B in 10.8157ms
+2026/09/06 12:41:44 [DESKTOP-E8PN8I3/lK4alvOZtQ-000517] "GET http://localhost:8080/api/v1/guests?search=&page=1&per_page=20 HTTP/1.1" from [::1]:62841 - 200 370B in 1.0369ms
+2026/09/06 12:41:45 [DESKTOP-E8PN8I3/lK4alvOZtQ-000518] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:62844 - 200 429B in 2.8233ms
+2026/09/06 12:41:46 [DESKTOP-E8PN8I3/lK4alvOZtQ-000519] "GET http://localhost:8080/api/v1/finance/accounts/classes HTTP/1.1" from [::1]:62846 - 200 366B in 0s
+2026/09/06 12:41:46 [DESKTOP-E8PN8I3/lK4alvOZtQ-000520] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:62847 - 200 168B in 1.343ms
+2026/09/06 12:41:46 [DESKTOP-E8PN8I3/lK4alvOZtQ-000521] "GET http://localhost:8080/api/v1/finance/accounts/classes HTTP/1.1" from [::1]:62848 - 200 366B in 0s
+2026/09/06 12:41:46 [DESKTOP-E8PN8I3/lK4alvOZtQ-000522] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:62849 - 200 168B in 1.1106ms
+2026/09/06 12:41:47 [DESKTOP-E8PN8I3/lK4alvOZtQ-000523] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:62855 - 200 5178B in 2.0004ms
+2026/09/06 12:41:47 [DESKTOP-E8PN8I3/lK4alvOZtQ-000524] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:62856 - 200 5178B in 507.4µs
+
+ panic: interface conversion: interface {} is nil, not string
+ 
+ -> infineon/internal/server/handler.(*Handler).GetDashboard
+ ->   C:/Users/LENOVO/Documents/Special Project/internal/server/handler/reports.go:67
+
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.DemoPropertyID.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/demo.go:13
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.Auth.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/auth.go:32
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/chain.go:31
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/cors.(*Cors).Handler.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/cors@v1.2.1/cors.go:228
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.CorrelationID.func1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/correlation.go:23
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.Recoverer.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/recoverer.go:45
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestLogger.func1.1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/logger.go:55
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RealIP.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/realip.go:36
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestID.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/request_id.go:76
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:90
+    net/http.serverHandler.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:3413
+    net/http.(*conn).serve
+      C:/Program Files/Go/src/net/http/server.go:2137
+    created by net/http.(*Server).Serve in goroutine 1
+      C:/Program Files/Go/src/net/http/server.go:3581
+    
+2026/09/06 12:41:48 [DESKTOP-E8PN8I3/lK4alvOZtQ-000525] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:62858 - 500 0B in 18.22ms
+
+ panic: interface conversion: interface {} is nil, not string
+ 
+ -> infineon/internal/server/handler.(*Handler).GetDashboard
+ ->   C:/Users/LENOVO/Documents/Special Project/internal/server/handler/reports.go:67
+
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.DemoPropertyID.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/demo.go:13
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.Auth.1.1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/auth.go:32
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/chain.go:31
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:73
+    github.com/go-chi/chi/v5.(*Mux).Mount.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:327
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).routeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:459
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/cors.(*Cors).Handler.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/cors@v1.2.1/cors.go:228
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    infineon/internal/server/middleware.CorrelationID.func1
+      C:/Users/LENOVO/Documents/Special Project/internal/server/middleware/correlation.go:23
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.Recoverer.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/recoverer.go:45
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestLogger.func1.1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/logger.go:55
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RealIP.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/realip.go:36
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5/middleware.RequestID.func1
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/middleware/request_id.go:76
+    net/http.HandlerFunc.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:2338
+    github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+      C:/Users/LENOVO/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.12/mux.go:90
+    net/http.serverHandler.ServeHTTP
+      C:/Program Files/Go/src/net/http/server.go:3413
+    net/http.(*conn).serve
+      C:/Program Files/Go/src/net/http/server.go:2137
+    created by net/http.(*Server).Serve in goroutine 1
+      C:/Program Files/Go/src/net/http/server.go:3581
+    
+2026/09/06 12:41:48 [DESKTOP-E8PN8I3/lK4alvOZtQ-000526] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:62859 - 500 0B in 4.5563ms
+2026/09/06 12:41:49 [DESKTOP-E8PN8I3/lK4alvOZtQ-000527] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:62863 - 200 4354B in 3.0307ms
+2026/09/06 12:41:50 [DESKTOP-E8PN8I3/lK4alvOZtQ-000528] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:62864 - 200 4354B in 6.8617ms
+2026/09/06 12:41:51 [DESKTOP-E8PN8I3/lK4alvOZtQ-000529] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62866 - 401 179B in 130.8014ms
+2026/09/06 12:41:53 [DESKTOP-E8PN8I3/lK4alvOZtQ-000530] "POST http://localhost:8080/api/v1/auth/login HTTP/1.1" from [::1]:62866 - 200 819B in 128.7437ms
+2026/09/06 12:41:55 [DESKTOP-E8PN8I3/lK4alvOZtQ-000531] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62897 - 200 544B in 2.498ms
+2026/09/06 12:41:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000532] "GET http://localhost:8080/api/v1/health HTTP/1.1" from [::1]:62898 - 200 213B in 997.4µs
+2026/09/06 12:41:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000533] "GET http://localhost:8080/favicon.ico HTTP/1.1" from [::1]:62898 - 404 19B in 0s
+2026/09/06 12:41:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000534] "GET http://localhost:8080/api/v1/front-desk/dashboard HTTP/1.1" from [::1]:62898 - 401 59B in 0s
+2026/09/06 12:41:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000535] "GET http://localhost:8080/api/v1/rooms?per_page=10 HTTP/1.1" from [::1]:62898 - 401 59B in 0s
+2026/09/06 12:41:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000536] "GET http://localhost:8080/api/v1/reservations HTTP/1.1" from [::1]:62898 - 401 59B in 0s
+2026/09/06 12:41:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000537] "GET http://localhost:8080/api/v1/guests HTTP/1.1" from [::1]:62898 - 401 59B in 0s
+2026/09/06 12:41:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000538] "GET http://localhost:8080/api/v1/channels HTTP/1.1" from [::1]:62898 - 401 59B in 996.5µs
+2026/09/06 12:41:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000539] "GET http://localhost:8080/api/v1/channels/dashboard HTTP/1.1" from [::1]:62898 - 401 59B in 0s
+2026/09/06 12:41:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000540] "GET http://localhost:8080/api/v1/reports/dashboard HTTP/1.1" from [::1]:62898 - 401 59B in 0s
+2026/09/06 12:41:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000541] "GET http://localhost:8080/api/v1/finance/accounts HTTP/1.1" from [::1]:62898 - 401 59B in 0s
+2026/09/06 12:41:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000542] "GET http://localhost:8080/api/v1/hr/employees HTTP/1.1" from [::1]:62898 - 401 59B in 518.8µs
+2026/09/06 12:41:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000543] "GET http://localhost:8080/api/v1/pos/outlets HTTP/1.1" from [::1]:62898 - 401 59B in 0s
+2026/09/06 12:41:56 [DESKTOP-E8PN8I3/lK4alvOZtQ-000544] "GET http://localhost:8080/api/v1/inventory/products HTTP/1.1" from [::1]:62898 - 401 59B in 0s

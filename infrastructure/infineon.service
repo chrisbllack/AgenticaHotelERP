@@ -1,0 +1,37 @@
+[Unit]
+Description=INFINEON Enterprise Platform
+Documentation=https://docs.infineon.com
+After=network.target postgresql.service
+Requires=postgresql.service
+
+[Service]
+Type=simple
+User=infineon
+Group=infineon
+WorkingDirectory=/var/lib/infineon
+ExecStart=/usr/local/bin/infineon serve --env /var/lib/infineon/.env --port 8080
+Restart=always
+RestartSec=5
+TimeoutStopSec=30
+
+# Security hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/infineon
+PrivateTmp=true
+
+# Environment
+Environment=HOME=/var/lib/infineon
+
+# Resource limits
+LimitNOFILE=65536
+LimitNPROC=4096
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=infineon
+
+[Install]
+WantedBy=multi-user.target
