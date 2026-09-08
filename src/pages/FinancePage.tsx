@@ -4,7 +4,12 @@ import { PageHeader } from "../components/ui/primitives";
 import { cashierShifts, glAccounts, journalEntries } from "../data/demo";
 import { usePlatform } from "../store/platform";
 import { naira } from "../lib/utils";
-import { BookOpen, Landmark, Scale, Wallet } from "lucide-react";
+import { BookOpen, Landmark, Scale, Wallet, FileSpreadsheet, Building2, Receipt, ShieldCheck, TrendingUp } from "lucide-react";
+import { USALIStatementsView } from "../components/finance/USALIStatementsView";
+import { CityLedgerView } from "../components/finance/CityLedgerView";
+import { AccountsPayableView } from "../components/finance/AccountsPayableView";
+import { TaxComplianceView } from "../components/finance/TaxComplianceView";
+import { CashFlowView } from "../components/finance/CashFlowView";
 
 const CLASS_ORDER = ["asset", "liability", "equity", "revenue", "expense"] as const;
 const CLASS_LABEL: Record<string, string> = {
@@ -17,65 +22,109 @@ const CLASS_LABEL: Record<string, string> = {
 
 export default function FinancePage() {
   const { folios } = usePlatform();
-  const [tab, setTab] = useState<"coa" | "journal" | "cash">("coa");
+  const [tab, setTab] = useState<"usali" | "city_ledger" | "ap" | "tax" | "cash_flow" | "coa" | "journal" | "cash">("usali");
 
   const guestLedger = folios.reduce((a, f) => a + Math.max(-f.balance, 0), 0);
   const depositsHeld = folios.reduce((a, f) => a + Math.max(f.balance, 0), 0);
   const revenueAccounts = glAccounts.filter((a) => a.accountClass === "revenue");
   const expenseAccounts = glAccounts.filter((a) => a.accountClass === "expense");
 
-  const tabs: Array<["coa" | "journal" | "cash", string]> = [
-    ["coa", "Chart of Accounts"],
-    ["journal", "Journal Entries"],
-    ["cash", "Cash & Banking"],
+  const tabs: Array<["usali" | "city_ledger" | "ap" | "tax" | "cash_flow" | "coa" | "journal" | "cash", string, any]> = [
+    ["usali", "USALI Statements", FileSpreadsheet],
+    ["cash_flow", "Cash Flow Forecast (30D)", TrendingUp],
+    ["city_ledger", "City Ledger (AR)", Building2],
+    ["ap", "Accounts Payable (3-Way)", Receipt],
+    ["tax", "Tax Compliance (VAT/WHT)", ShieldCheck],
+    ["coa", "Chart of Accounts", BookOpen],
+    ["journal", "Journal Entries", Scale],
+    ["cash", "Cash & Banking", Wallet],
   ];
 
   return (
     <div className="space-y-6">
-      <PageHeader title="Finance & Accounting" subtitle="General ledger · guest & city ledgers · cash management — all money posts here" />
+      <PageHeader
+        title="Finance & Accounting"
+        subtitle="USALI 11th Edition · 30-Day Liquidity Projections · City Ledger AR · 3-Way AP Matching · Statutory Tax Compliance"
+      />
 
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-        <StatCard label="Guest Ledger" value={naira(guestLedger, true)} sub="open folio balances" accent="gold" />
-        <StatCard label="Deposits Held" value={naira(depositsHeld, true)} sub="advance deposits" accent="emerald" />
-        <StatCard label="Cash on Hand" value={naira(cashierShifts.find((c) => c.status === "open")?.openingFloat ?? 0, true)} sub="PM cashier bank" />
-        <StatCard label="Journals (Sep)" value={String(journalEntries.length)} sub={`${journalEntries.filter((j) => j.status === "posted").length} posted`} accent="sky" />
-      </div>
-
-      <div className="flex flex-wrap gap-2">
-        {tabs.map(([key, label]) => (
+      <div className="flex flex-wrap gap-2 border-b border-brand-800/80 pb-3">
+        {tabs.map(([key, label, Icon]) => (
           <button
             key={key}
             onClick={() => setTab(key)}
-            className={`rounded-lg border px-4 py-2 text-sm ${
-              tab === key ? "border-brand-400/50 bg-brand-500/20 font-medium text-brand-50" : "border-brand-800/80 bg-brand-900/40 text-brand-100/70 hover:border-brand-600"
+            className={`flex items-center gap-2 rounded-lg border px-4 py-2 text-sm transition ${
+              tab === key
+                ? "border-gold-400/50 bg-brand-500/20 font-semibold text-gold-200 shadow-sm"
+                : "border-brand-800/80 bg-brand-900/40 text-brand-100/70 hover:border-brand-600 hover:text-brand-50"
             }`}
           >
+            <Icon size={15} className={tab === key ? "text-gold-300" : "text-brand-300"} />
             {label}
           </button>
         ))}
       </div>
 
-      {tab === "coa" ? (
-        <div className="grid gap-4 lg:grid-cols-5">
-          {CLASS_ORDER.map((cls) => (
-            <Card key={cls} className="lg:col-span-1">
-              <CardHeader title={CLASS_LABEL[cls]} subtitle={`${glAccounts.filter((a) => a.accountClass === cls).length} accounts`} />
+      {tab === "usali" && <USALIStatementsView />}
+      {tab === "cash_flow" && <CashFlowView />}
+      {tab === "city_ledger" && <CityLedgerView />}
+      {tab === "ap" && <AccountsPayableView />}
+      {tab === "tax" && <TaxComplianceView />}
+
+      {tab === "coa" && (
+        <div className="space-y-6">
+          <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+            <StatCard label="Guest Ledger" value={naira(guestLedger, true)} sub="open folio balances" accent="gold" />
+            <StatCard label="Deposits Held" value={naira(depositsHeld, true)} sub="advance deposits" accent="emerald" />
+            <StatCard label="Cash on Hand" value={naira(cashierShifts.find((c) => c.status === "open")?.openingFloat ?? 0, true)} sub="PM cashier bank" />
+            <StatCard label="Journals (Sep)" value={String(journalEntries.length)} sub={`${journalEntries.filter((j) => j.status === "posted").length} posted`} accent="sky" />
+          </div>
+
+          <div className="grid gap-4 lg:grid-cols-5">
+            {CLASS_ORDER.map((cls) => (
+              <Card key={cls} className="lg:col-span-1">
+                <CardHeader title={CLASS_LABEL[cls]} subtitle={`${glAccounts.filter((a) => a.accountClass === cls).length} accounts`} />
+                <ul className="divide-y divide-brand-800/40">
+                  {glAccounts
+                    .filter((a) => a.accountClass === cls)
+                    .map((a) => (
+                      <li key={a.id} className="px-4 py-2.5">
+                        <p className="text-sm text-brand-50">{a.accountName}</p>
+                        <p className="font-mono text-[11px] text-brand-200/50">{a.accountCode}</p>
+                      </li>
+                    ))}
+                </ul>
+              </Card>
+            ))}
+          </div>
+
+          <div className="grid gap-4 lg:grid-cols-2">
+            <Card>
+              <CardHeader title="Revenue Accounts (GL)" subtitle="Posted via fin.posting contract from M-LOD · M-FNB · M-EVT" />
               <ul className="divide-y divide-brand-800/40">
-                {glAccounts
-                  .filter((a) => a.accountClass === cls)
-                  .map((a) => (
-                    <li key={a.id} className="px-4 py-2.5">
-                      <p className="text-sm text-brand-50">{a.accountName}</p>
-                      <p className="font-mono text-[11px] text-brand-200/50">{a.accountCode}</p>
-                    </li>
-                  ))}
+                {revenueAccounts.map((a) => (
+                  <li key={a.id} className="flex items-center justify-between px-5 py-2.5 text-sm">
+                    <span className="text-brand-100/90">{a.accountName}</span>
+                    <span className="font-mono text-xs text-brand-200/50">{a.accountCode}</span>
+                  </li>
+                ))}
               </ul>
             </Card>
-          ))}
+            <Card>
+              <CardHeader title="Expense Accounts (GL)" subtitle={`${expenseAccounts.length} operating & cost accounts`} />
+              <ul className="divide-y divide-brand-800/40">
+                {expenseAccounts.map((a) => (
+                  <li key={a.id} className="flex items-center justify-between px-5 py-2.5 text-sm">
+                    <span className="text-brand-100/90">{a.accountName}</span>
+                    <span className="font-mono text-xs text-brand-200/50">{a.accountCode}</span>
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          </div>
         </div>
-      ) : null}
+      )}
 
-      {tab === "journal" ? (
+      {tab === "journal" && (
         <Card>
           <CardHeader title="Journal Entries" subtitle="Double-entry batches — balanced batches only" />
           <Table head={["Entry #", "Date", "Description", "Status"]}>
@@ -93,9 +142,9 @@ export default function FinancePage() {
             ))}
           </Table>
         </Card>
-      ) : null}
+      )}
 
-      {tab === "cash" ? (
+      {tab === "cash" && (
         <div className="grid gap-4 lg:grid-cols-2">
           <Card>
             <CardHeader title="Cashier Shifts" subtitle="Front office cash banks" />
@@ -157,32 +206,8 @@ export default function FinancePage() {
             </div>
           </Card>
         </div>
-      ) : null}
-
-      <div className="grid gap-4 lg:grid-cols-2">
-        <Card>
-          <CardHeader title="Revenue Accounts (GL)" subtitle="Posted via fin.posting contract from M-LOD · M-FNB · M-EVT" />
-          <ul className="divide-y divide-brand-800/40">
-            {revenueAccounts.map((a) => (
-              <li key={a.id} className="flex items-center justify-between px-5 py-2.5 text-sm">
-                <span className="text-brand-100/90">{a.accountName}</span>
-                <span className="font-mono text-xs text-brand-200/50">{a.accountCode}</span>
-              </li>
-            ))}
-          </ul>
-        </Card>
-        <Card>
-          <CardHeader title="Expense Accounts (GL)" subtitle={`${expenseAccounts.length} operating & cost accounts`} />
-          <ul className="divide-y divide-brand-800/40">
-            {expenseAccounts.map((a) => (
-              <li key={a.id} className="flex items-center justify-between px-5 py-2.5 text-sm">
-                <span className="text-brand-100/90">{a.accountName}</span>
-                <span className="font-mono text-xs text-brand-200/50">{a.accountCode}</span>
-              </li>
-            ))}
-          </ul>
-        </Card>
-      </div>
+      )}
     </div>
   );
 }
+

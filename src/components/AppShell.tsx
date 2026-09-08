@@ -1,9 +1,9 @@
 import { useState, type ReactNode } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import {
-  Activity, BarChart3, Bell, Building2, CreditCard, Crown,
-  FileText, Gauge, HandCoins, LayoutDashboard, LogOut, Menu, Package, Plug,
-  ShieldCheck, Sparkles, UtensilsCrossed, Users, Wrench, X,
+  Activity, ArrowLeftRight, BarChart3, Bell, Building2, CreditCard, Crown,
+  FileText, Gauge, HandCoins, LayoutDashboard, LogOut, Menu, Moon, Package, Plug,
+  ShieldCheck, Sparkles, TrendingUp, UtensilsCrossed, Users, Wrench, X,
 } from "lucide-react";
 import { useAuth } from "../auth/auth";
 import { PROPERTY } from "../data/demo";
@@ -30,11 +30,15 @@ const NAV: NavModule[] = [
     items: [{ label: "Executive Dashboard", to: "/dashboard", icon: <LayoutDashboard size={15} /> }],
   },
   {
-    label: "Lodging & Guest Ops", code: "M-LOD", badge: "Core",    items: [{ label: "Front Desk", to: "/front-desk", icon: <ConciergeBell /> },
+    label: "Lodging & Guest Ops", code: "M-LOD", badge: "Core",
+    items: [
+      { label: "Front Desk", to: "/front-desk", icon: <ConciergeBell /> },
+      { label: "Shift Handover", to: "/shift-handover", icon: <ArrowLeftRight size={15} /> },
       { label: "Room Rack", to: "/rooms", icon: <Building2 size={15} /> },
       { label: "Reservations", to: "/reservations", icon: <FileText size={15} /> },
       { label: "Housekeeping", to: "/housekeeping", icon: <Sparkles size={15} /> },
-      { label: "Maintenance", to: "/maintenance", icon: <Wrench size={15} /> },
+      { label: "Maintenance & PM", to: "/maintenance", icon: <Wrench size={15} /> },
+      { label: "Night Audit", to: "/night-audit", icon: <Moon size={15} /> },
     ],
   },
   {
@@ -58,8 +62,11 @@ const NAV: NavModule[] = [
     items: [{ label: "Guests & Loyalty", to: "/crm", icon: <Crown size={15} /> }],
   },
   {
-    label: "Distribution", code: "M-DST",
-    items: [{ label: "Channel Manager", to: "/channels", icon: <Plug size={15} /> }],
+    label: "Distribution & Revenue", code: "M-DST",
+    items: [
+      { label: "Yield & Dynamic Pricing", to: "/yield-management", icon: <TrendingUp size={15} /> },
+      { label: "Channel Manager", to: "/channels", icon: <Plug size={15} /> },
+    ],
   },
   {
     label: "Payments", code: "M-PRC",
@@ -160,9 +167,9 @@ export function AppShell() {
 
         <div className="border-t border-brand-800/70 px-4 py-3">
           <p className="text-[10px] text-brand-200/40">
-            13 main modules · 62 submodules
+            13 main modules · 65 submodules
             <br />
-            v0.2.0 · demo dataset
+            v0.3.0 · Enterprise Edition
           </p>
         </div>
       </aside>

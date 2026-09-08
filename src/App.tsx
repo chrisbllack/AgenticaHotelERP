@@ -9,10 +9,13 @@ import LandingPage from "./pages/LandingPage";
 import AuthPage from "./pages/AuthPage";
 import DashboardPage from "./pages/DashboardPage";
 import FrontDeskPage from "./pages/FrontDeskPage";
+import ShiftHandoverPage from "./pages/ShiftHandoverPage";
 import RoomsPage from "./pages/RoomsPage";
 import ReservationsPage from "./pages/ReservationsPage";
 import HousekeepingPage from "./pages/HousekeepingPage";
 import MaintenancePage from "./pages/MaintenancePage";
+import YieldManagementPage from "./pages/YieldManagementPage";
+import NightAuditPage from "./pages/NightAuditPage";
 import PosPage from "./pages/PosPage";
 import InventoryPage from "./pages/InventoryPage";
 import FinancePage from "./pages/FinancePage";
@@ -34,10 +37,13 @@ import BookingLookupPage from "./pages/booking/BookingLookupPage";
 const protectedRoutes: Array<[string, ComponentType]> = [
   ["/dashboard", DashboardPage],
   ["/front-desk", FrontDeskPage],
+  ["/shift-handover", ShiftHandoverPage],
   ["/rooms", RoomsPage],
   ["/reservations", ReservationsPage],
   ["/housekeeping", HousekeepingPage],
   ["/maintenance", MaintenancePage],
+  ["/yield-management", YieldManagementPage],
+  ["/night-audit", NightAuditPage],
   ["/pos", PosPage],
   ["/inventory", InventoryPage],
   ["/finance", FinancePage],

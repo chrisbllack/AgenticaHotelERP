@@ -1,0 +1,6 @@
+{
+  "name": "INFINEON Enterprise — Grand Palm Hotel Lagos",
+  "description": "INFINEON Enterprise — the complete hospitality management platform with integrated hotel booking website for Grand Palm Hotel Lagos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

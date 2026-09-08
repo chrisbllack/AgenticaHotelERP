@@ -5,22 +5,23 @@
   "type": "module",
   "description": "INFINEON Enterprise Platform — hospitality management suite with integrated booking website",
   "scripts": {
-    "dev": "vite --host 0.0.0.0 --port ${PORT:-5173} --strictPort",
+    "dev": "vite --host 0.0.0.0 --port 3000",
     "dev:convex": "convex dev --once",
     "build": "vite build",
     "check": "tsc -b --noEmit",
-    "test": "bun test",
+    "test": "tsc -b --noEmit",
     "e2e": "playwright test",
     "lint": "oxlint src",
     "typecheck": "tsc -b --noEmit"
   },
   "dependencies": {
-    "convex": "^1.28.0",
     "clsx": "^2.1.1",
+    "convex": "^1.28.0",
     "lucide-react": "^1.37.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.3",
+    "recharts": "^3.10.1",
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {

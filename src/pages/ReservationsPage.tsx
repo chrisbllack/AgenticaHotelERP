@@ -2,13 +2,15 @@ import { useMemo, useState } from "react";
 import { Card, CardHeader, Badge, Table, Td, EmptyState } from "../components/ui/primitives";
 import { PageHeader } from "../components/ui/primitives";
 import { usePlatform } from "../store/platform";
-import { guests } from "../data/demo";
 import { fmtDate, naira } from "../lib/utils";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "../convex/_generated/api";
 import { BOOKING_ENABLED, fmtKobo } from "../lib/booking-client";
 import type { Id } from "../convex/_generated/dataModel";
+import type { Guest } from "../types";
 import { CheckCircle2, ExternalLink, Globe, Loader2, Wallet, XCircle } from "lucide-react";
+import GuestFlagBadge from "../components/GuestFlagBadge";
+import GuestFlagModal from "../components/GuestFlagModal";
 
 const STATUS_BADGE: Record<string, string> = {
   confirmed: "border-sky-400/40 bg-sky-500/10 text-sky-200",
@@ -20,9 +22,10 @@ const STATUS_BADGE: Record<string, string> = {
 };
 
 export default function ReservationsPage() {
-  const { reservations, checkIn, rooms } = usePlatform();
+  const { reservations, checkIn, rooms, guests } = usePlatform();
   const [statusFilter, setStatusFilter] = useState<string>("all");
   const [query, setQuery] = useState("");
+  const [selectedFlagGuest, setSelectedFlagGuest] = useState<Guest | null>(null);
 
   // Live website bookings (Convex) — the same data the booking site writes.
   const websiteBookings = useQuery(
@@ -41,7 +44,7 @@ export default function ReservationsPage() {
       const hay = `${r.confirmationNumber} ${g?.firstName} ${g?.lastName} ${g?.company} ${r.source}`.toLowerCase();
       return hay.includes(query.toLowerCase());
     });
-  }, [reservations, statusFilter, query]);
+  }, [reservations, statusFilter, query, guests]);
 
   const counts = {
     all: reservations.length,
@@ -102,16 +105,34 @@ export default function ReservationsPage() {
         {filtered.length === 0 ? (
           <EmptyState title="No reservations match" hint="Try clearing the search or filter." />
         ) : (
-          <Table head={["Confirmation", "Guest", "Stay", "Party", "Room", "Source", "Value", "Status", ""]}>
+          <Table head={["Confirmation", "Guest", "Flags / Risk", "Stay", "Party", "Room", "Source", "Value", "Status", ""]}>
             {filtered.map((r) => {
               const g = guests.find((x) => x.id === r.guestId);
               return (
                 <tr key={r.id} className="hover:bg-brand-800/30">
                   <Td><span className="font-mono text-xs text-gold-300">{r.confirmationNumber}</span></Td>
                   <Td>
-                    <span className="font-medium text-brand-50">{g?.firstName} {g?.lastName}</span>
-                    {r.isVip ? <Badge className="ml-2 border-gold-500/40 bg-gold-500/10 text-gold-300">VIP</Badge> : null}
+                    <div className="flex items-center gap-1.5">
+                      <span className="font-medium text-brand-50">{g?.firstName} {g?.lastName}</span>
+                      {r.isVip ? <Badge className="border-gold-500/40 bg-gold-500/10 text-gold-300 text-[10px]">VIP</Badge> : null}
+                    </div>
                     <span className="block text-xs text-brand-200/50">{g?.company}</span>
+                  </Td>
+                  <Td>
+                    {g?.flags && g.flags.length > 0 ? (
+                      <GuestFlagBadge
+                        flags={g.flags}
+                        blacklistReason={g.blacklistReason}
+                        onEditClick={() => setSelectedFlagGuest(g)}
+                      />
+                    ) : (
+                      <button
+                        onClick={() => setSelectedFlagGuest(g || null)}
+                        className="text-[11px] text-brand-300/40 hover:text-brand-200 transition"
+                      >
+                        + Add Flag
+                      </button>
+                    )}
                   </Td>
                   <Td>{fmtDate(r.arrivalDate)} → {fmtDate(r.departureDate)}<span className="block text-xs text-brand-200/50">{r.nights} nights</span></Td>
                   <Td>{r.adults}A {r.children}C</Td>
@@ -134,6 +155,12 @@ export default function ReservationsPage() {
           </Table>
         )}
       </Card>
+
+      <GuestFlagModal
+        isOpen={Boolean(selectedFlagGuest)}
+        guest={selectedFlagGuest}
+        onClose={() => setSelectedFlagGuest(null)}
+      />
     </div>
   );
 }
