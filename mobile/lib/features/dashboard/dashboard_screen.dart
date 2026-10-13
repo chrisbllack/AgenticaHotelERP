@@ -1,13 +1,80 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:infineon_mobile/core/network/api_client.dart';
+
+final dashboardProvider = FutureProvider.autoDispose<DashboardData>((ref) async {
+  final client = ApiClient(baseUrl: await ApiClient.getServerUrl());
+  final response = await client.get('/reports/dashboard');
+  final payload = response['data'];
+
+  if (payload is! Map) {
+    throw const FormatException('Dashboard response is missing data');
+  }
+
+  return DashboardData.fromJson(Map<String, dynamic>.from(payload));
+});
+
+class DashboardData {
+  final int arrivals;
+  final int departures;
+  final int occupiedRooms;
+  final int cleanRooms;
+  final int dirtyRooms;
+  final int outOfOrderRooms;
+  final double occupancyRate;
+  final double todayTotalRevenue;
+
+  const DashboardData({
+    required this.arrivals,
+    required this.departures,
+    required this.occupiedRooms,
+    required this.cleanRooms,
+    required this.dirtyRooms,
+    required this.outOfOrderRooms,
+    required this.occupancyRate,
+    required this.todayTotalRevenue,
+  });
+
+  factory DashboardData.fromJson(Map<String, dynamic> json) {
+    int asInt(String key) => (json[key] as num?)?.round() ?? 0;
+    double asDouble(String key) => (json[key] as num?)?.toDouble() ?? 0;
+
+    return DashboardData(
+      arrivals: asInt('today_arrivals'),
+      departures: asInt('today_departures'),
+      occupiedRooms: asInt('occupied_rooms'),
+      cleanRooms: asInt('clean_rooms'),
+      dirtyRooms: asInt('dirty_rooms'),
+      outOfOrderRooms: asInt('out_of_order_rooms'),
+      occupancyRate: asDouble('occupancy_rate'),
+      todayTotalRevenue: asDouble('today_total_revenue'),
+    );
+  }
+}
 
 class DashboardScreen extends ConsumerWidget {
   const DashboardScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Scaffold(
+    final dashboard = ref.watch(dashboardProvider);
+
+    return dashboard.when(
+      loading: () => const Scaffold(
+        body: Center(child: CircularProgressIndicator()),
+      ),
+      error: (_, __) => Scaffold(
+        appBar: AppBar(title: const Text('Dashboard')),
+        body: Center(
+          child: FilledButton.icon(
+            onPressed: () => ref.invalidate(dashboardProvider),
+            icon: const Icon(Icons.refresh),
+            label: const Text('Retry'),
+          ),
+        ),
+      ),
+      data: (data) => Scaffold(
       appBar: AppBar(
         title: const Text('Dashboard'),
         actions: [
@@ -23,8 +90,8 @@ class DashboardScreen extends ConsumerWidget {
       ),
       body: RefreshIndicator(
         onRefresh: () async {
-          // TODO: Refresh data from API
-          await Future.delayed(const Duration(seconds: 1));
+          ref.invalidate(dashboardProvider);
+          await ref.read(dashboardProvider.future);
         },
         child: SingleChildScrollView(
           physics: const AlwaysScrollableScrollPhysics(),
@@ -85,29 +152,27 @@ class DashboardScreen extends ConsumerWidget {
                 children: [
                   _KPICard(
                     title: 'Occupancy',
-                    value: '78%',
+                    value: '${data.occupancyRate.round()}%',
                     icon: Icons.hotel,
                     color: Colors.blue,
-                    trend: '+3%',
                   ),
                   _KPICard(
                     title: 'Arrivals',
-                    value: '12',
+                    value: data.arrivals.toString(),
                     icon: Icons.login,
                     color: Colors.green,
                   ),
                   _KPICard(
                     title: 'Departures',
-                    value: '8',
+                    value: data.departures.toString(),
                     icon: Icons.logout,
                     color: Colors.orange,
                   ),
                   _KPICard(
                     title: 'Revenue',
-                    value: '₦2.4M',
+                    value: _formatRevenue(data.todayTotalRevenue),
                     icon: Icons.attach_money,
                     color: Colors.purple,
-                    trend: '+12%',
                   ),
                 ],
               ),
@@ -167,12 +232,19 @@ class DashboardScreen extends ConsumerWidget {
                 ),
               ),
               const SizedBox(height: 12),
-              _RoomStatusSummary(),
+              _RoomStatusSummary(data: data),
             ],
           ),
         ),
       ),
+      ),
     );
+  }
+
+  String _formatRevenue(double value) {
+    if (value >= 1000000) return '₦${(value / 1000000).toStringAsFixed(1)}M';
+    if (value >= 1000) return '₦${(value / 1000).toStringAsFixed(1)}K';
+    return '₦${value.toStringAsFixed(0)}';
   }
 }
 
@@ -181,14 +253,12 @@ class _KPICard extends StatelessWidget {
   final String value;
   final IconData icon;
   final Color color;
-  final String? trend;
 
   const _KPICard({
     required this.title,
     required this.value,
     required this.icon,
     required this.color,
-    this.trend,
   });
 
   @override
@@ -206,18 +276,6 @@ class _KPICard extends StatelessWidget {
                 const SizedBox(width: 4),
                 Text(title, style: Theme.of(context).textTheme.bodySmall),
                 const Spacer(),
-                if (trend != null)
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                    decoration: BoxDecoration(
-                      color: Colors.green.shade50,
-                      borderRadius: BorderRadius.circular(4),
-                    ),
-                    child: Text(
-                      trend!,
-                      style: TextStyle(fontSize: 10, color: Colors.green.shade700),
-                    ),
-                  ),
               ],
             ),
             const SizedBox(height: 8),
@@ -274,6 +332,10 @@ class _QuickAction extends StatelessWidget {
 }
 
 class _RoomStatusSummary extends StatelessWidget {
+  final DashboardData data;
+
+  const _RoomStatusSummary({required this.data});
+
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -281,12 +343,12 @@ class _RoomStatusSummary extends StatelessWidget {
         padding: const EdgeInsets.all(12),
         child: Column(
           children: [
-            _StatusRow(label: 'Vacant Clean', count: 18, color: Colors.green),
-            _StatusRow(label: 'Occupied', count: 28, color: Colors.blue),
-            _StatusRow(label: 'Vacant Dirty', count: 6, color: Colors.orange),
-            _StatusRow(label: 'Out of Order', count: 2, color: Colors.red),
-            _StatusRow(label: 'Reserved', count: 5, color: Colors.purple),
-            _StatusRow(label: 'Due Out', count: 8, color: Colors.amber),
+            _StatusRow(label: 'Vacant Clean', count: data.cleanRooms, color: Colors.green),
+            _StatusRow(label: 'Occupied', count: data.occupiedRooms, color: Colors.blue),
+            _StatusRow(label: 'Vacant Dirty', count: data.dirtyRooms, color: Colors.orange),
+            _StatusRow(label: 'Out of Order', count: data.outOfOrderRooms, color: Colors.red),
+            _StatusRow(label: 'Arrivals', count: data.arrivals, color: Colors.purple),
+            _StatusRow(label: 'Departures', count: data.departures, color: Colors.amber),
           ],
         ),
       ),
